@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Collection viewlets that render f.e. a carousel/slideshow"""
+"""viewlets that render f.e. a carousel/slideshow"""
 
 import copy
 
@@ -35,9 +35,9 @@ except ImportError:
 
 from ps.plone.jssor import _
 
-CONFIGURATION_KEY = 'theming.toolkit.viewlets.collection'
-CONFIGURATION_KEY_ABOVE = 'theming.toolkit.viewlets.featuredlisting.above'
-CONFIGURATION_KEY_BELOW = 'theming.toolkit.viewlets.featuredlisting.below'
+CONFIGURATION_KEY = 'ps.plone.jssor.slider'
+CONFIGURATION_KEY_ABOVE = 'ps.plone.jssor.slider.above'
+CONFIGURATION_KEY_BELOW = 'ps.plone.jssor.slider.below'
 
 AVAILABLE_FLS_DEFAULTS = ['featuredListingSlider_ItemList', 'featuredListingSlider_Limit', 'featuredListingSlider_offset', 'featuredListingSliderJS']
 MLS_IMAGE_SIZES = ['thumb', 'mini', 'preview', 'large']
@@ -169,7 +169,7 @@ class FeaturedListingCollectionViewlet(ViewletBase):
 
     @property
     def GlobalDefaults(self):
-        """Get the default values from theming.toolkit.core settings"""
+        """Get global default values"""
 
         return []
 
@@ -184,7 +184,7 @@ class FeaturedListingCollectionViewlet(ViewletBase):
                 try:
                     local_settings[n] = global_defaults[n]
                 except Exception:
-                    """keys for config in theming.toolkit.core & theming.toolkit.viewlets?"""
+                    """keys for config ps.plone.jssor"""
 
         return local_settings
 
