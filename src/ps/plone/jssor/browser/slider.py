@@ -39,35 +39,109 @@ CONFIGURATION_KEY = 'ps.plone.jssor.slider'
 CONFIGURATION_KEY_ABOVE = 'ps.plone.jssor.slider.above'
 CONFIGURATION_KEY_BELOW = 'ps.plone.jssor.slider.below'
 
-AVAILABLE_FLS_DEFAULTS = ['featuredListingSlider_ItemList', 'featuredListingSlider_Limit', 'featuredListingSlider_offset', 'featuredListingSliderJS']
+AVAILABLE_FLS_DEFAULTS = ['featuredListingSlider_ItemList',
+                          'featuredListingSlider_Limit',
+                          'featuredListingSlider_offset',
+                          'featuredListingSliderJS']
 MLS_IMAGE_SIZES = ['thumb', 'mini', 'preview', 'large']
 SLIDER_STEPS = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 SLIDER_STEPS_FULL = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-LARGE_RANGE = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"]
-SLIDER_POSITION_TOP = ['aboveMenue', 'aboveColumns', 'aboveContent', 'portletLeft', 'portletRight', 'coverIntegrated']
-SLIDER_POSITION_BOTTOM = ['belowContentArea', 'belowColumns', 'aboveColophone', 'belowFooter', 'portletLeft', 'portletRight']
+LARGE_RANGE = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
+               "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
+               "22", "23", "24", "25", "26", "27", "28", "29", "30", "31",
+               "32", "33", "34", "35", "36", "37", "38", "39", "40", "41",
+               "42", "43", "44", "45", "46", "47", "48", "49", "50", "51",
+               "52", "53", "54", "55", "56", "57", "58", "59", "60", "61",
+               "62", "63", "64", "65", "66", "67", "68", "69", "70", "71",
+               "72", "73", "74", "75", "76", "77", "78", "79", "80", "81",
+               "82", "83", "84", "85", "86", "87", "88", "89", "90", "91",
+               "92", "93", "94", "95", "96", "97", "98", "99", "100"]
+SLIDER_POSITION_TOP = ['aboveMenue', 'aboveColumns', 'aboveContent',
+                       'portletLeft', 'portletRight', 'coverIntegrated']
+SLIDER_POSITION_BOTTOM = ['belowContentArea', 'belowColumns', 'aboveColophone',
+                          'belowFooter', 'portletLeft', 'portletRight']
 
 ARROW_STYLE = {}
-ARROW_STYLE['arrow01'] = '<span u="arrowleft" class="jssora01l" style="width: 45px; height: 45px; top: 127.5px; left: 8px;"/><span u="arrowright" class="jssora01r" style="width: 45px; height: 45px; top: 127.5px; right: 8px;"/>'
-ARROW_STYLE['arrow02'] = '<span u="arrowleft" class="jssora02l" style="width: 55px; height: 55px; top: 122.5px; left: 8px;"/><span u="arrowright" class="jssora02r" style="width: 55px; height: 55px; top: 122.5px; right: 8px;"/>'
-ARROW_STYLE['arrow03'] = '<span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 122.5px; left: 8px;"/><span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 122.5px; right: 8px;"/>'
-ARROW_STYLE['arrow04'] = '<span u="arrowleft" class="jssora04l" style="width: 28px; height: 40px; top: 130px;   left: 8px;"/><span u="arrowright" class="jssora04r" style="width: 28px; height: 40px; top: 130px;   right: 8px;"/>'
-ARROW_STYLE['arrow05'] = '<span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 130px;   left: 8px;"/><span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 130px;   right: 8px;"/>'
-ARROW_STYLE['arrow06'] = '<span u="arrowleft" class="jssora06l" style="width: 45px; height: 45px; top: 127.5px; left: 8px;"/><span u="arrowright" class="jssora06r" style="width: 45px; height: 45px; top: 127.5px; right: 8px;"/>'
-ARROW_STYLE['arrow07'] = '<span u="arrowleft" class="jssora07l" style="width: 50px; height: 50px; top: 125px;   left: 8px;"/><span u="arrowright" class="jssora07r" style="width: 50px; height: 50px; top: 125px;   right: 8px;"/>'
-ARROW_STYLE['arrow08'] = '<span u="arrowleft" class="jssorb08l" style="width: 50px; height: 50px; top: 8px; left: 275px;"/><span u="arrowright" class="jssorb08r" style="width: 50px; height: 50px; bottom: 8px; left: 275px;"/>'
-ARROW_STYLE['arrow09'] = '<span u="arrowleft" class="jssora09l" style="width: 50px; height: 50px; top: 125px; left: 8px;"/><span u="arrowright" class="jssora09r" style="width: 50px; height: 50px; top: 125px; right: 8px;"/>'
-ARROW_STYLE['arrow10'] = '<span u="arrowleft" class="jssora10l" style="width: 28px; height: 40px; top: 130px; left: 8px;"/><span u="arrowright" class="jssora10r" style="width: 28px; height: 40px; top: 130px; right: 8px;"/>'
-ARROW_STYLE['arrow11'] = '<span u="arrowleft" class="jssora11l" style="width: 37px; height: 37px; top: 131.5px; left: 8px;"/><span u="arrowright" class="jssora11r" style="width: 37px; height: 37px; top: 131.5px; right: 8px;"/>'
-ARROW_STYLE['arrow12'] = '<span u="arrowleft" class="jssora12l" style="width: 30px; height: 46px; top: 127px; left: 0px;"/><span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 127px; right: 0px;"/>'
-ARROW_STYLE['arrow13'] = '<span u="arrowleft" class="jssora13l" style="width: 40px; height: 50px; top: 125px; left: 0px;"/><span u="arrowright" class="jssora13r" style="width: 40px; height: 50px; top: 125px; right: 0px;"/>'
-ARROW_STYLE['arrow14'] = '<span u="arrowleft" class="jssora14l" style="width: 30px; height: 50px; top: 125px; left: 0px;"/><span u="arrowright" class="jssora14r" style="width: 30px; height: 50px; top: 125px; right: 0px;"/>'
-ARROW_STYLE['arrow15'] = '<span u="arrowleft" class="jssora15l" style="width: 20px; height: 38px; top: 131px; left: 18px;"/><span u="arrowright" class="jssora15r" style="width: 20px; height: 38px; top: 131px; right: 18px;"/>'
-ARROW_STYLE['arrow16'] = '<span u="arrowleft" class="jssora16l" style="width: 22px; height: 36px; top: 132px; left: 18px;"/><span u="arrowright" class="jssora16r" style="width: 22px; height: 36px; top: 132px; right: 18px;"/>'
-ARROW_STYLE['arrow18'] = '<span u="arrowleft" class="jssora18l" style="width: 29px; height: 29px; top: 135.5px; left: 8px;"/><span u="arrowright" class="jssora18r" style="width: 29px; height: 29px; top: 135.5px; right: 8px;"/>'
-ARROW_STYLE['arrow19'] = '<span u="arrowleft" class="jssora19l" style="width: 50px; height: 50px; top: 125px; left: 8px;"/><span u="arrowright" class="jssora19r" style="width: 50px; height: 50px; top: 125px; right: 8px;"/>'
-ARROW_STYLE['arrow20'] = '<span u="arrowleft" class="jssora20l" style="width: 55px; height: 55px; top: 122.5px; left: 8px;"/><span u="arrowright" class="jssora20r" style="width: 55px; height: 55px; top: 122.5px; right: 8px;"/>'
-ARROW_STYLE['arrow21'] = '<span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 122.5px; left: 8px;"/><span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 122.5px; right: 8px;"/>'
+ARROW_STYLE['arrow01'] = ('<span u="arrowleft" class="jssora01l" style="width:'
+                          ' 45px; height: 45px; top: 127.5px; left: 8px;"/>'
+                          '<span u="arrowright" class="jssora01r" style="width'
+                          ': 45px; height: 45px; top: 127.5px; right: 8px;"/>')
+ARROW_STYLE['arrow02'] = ('<span u="arrowleft" class="jssora02l" style="width:'
+                          ' 55px; height: 55px; top: 122.5px; left: 8px;"/><sp'
+                          'an u="arrowright" class="jssora02r" style="width: 5'
+                          '5px; height: 55px; top: 122.5px; right: 8px;"/>')
+ARROW_STYLE['arrow03'] = ('<span u="arrowleft" class="jssora03l" style="width:'
+                          '55px; height: 55px; top: 122.5px; left: 8px;"/><spa'
+                          'n u="arrowright" class="jssora03r" style="width: 55'
+                          'px; height: 55px; top: 122.5px; right: 8px;"/>')
+ARROW_STYLE['arrow04'] = ('<span u="arrowleft" class="jssora04l" style="width:'
+                          '28px; height: 40px; top: 130px; left: 8px;"/><spa'
+                          'n u="arrowright" class="jssora04r" style="width: 28'
+                          'px; height: 40px; top: 130px; right: 8px;"/>')
+ARROW_STYLE['arrow05'] = ('<span u="arrowleft" class="jssora05l" style="width:'
+                          ' 40px; height: 40px; top: 130px; left: 8px;"/><span'
+                          ' u="arrowright" class="jssora05r" style="width: 40p'
+                          'x; height: 40px; top: 130px; right: 8px;"/>')
+ARROW_STYLE['arrow06'] = ('<span u="arrowleft" class="jssora06l" style="width:'
+                          '45px; height: 45px; top: 127.5px; left: 8px;"/><spa'
+                          'n u="arrowright" class="jssora06r" style="width: 45'
+                          'px; height: 45px; top: 127.5px; right: 8px;"/>')
+ARROW_STYLE['arrow07'] = ('<span u="arrowleft" class="jssora07l" style="width:'
+                          '50px; height: 50px; top: 125px;   left: 8px;"/><spa'
+                          'n u="arrowright" class="jssora07r" style="width: 50'
+                          'px; height: 50px; top: 125px;   right: 8px;"/>')
+ARROW_STYLE['arrow08'] = ('<span u="arrowleft" class="jssorb08l" style="width:'
+                          '50px; height: 50px; top: 8px; left: 275px;"/><span '
+                          'u="arrowright" class="jssorb08r" style="width: 50px'
+                          '; height: 50px; bottom: 8px; left: 275px;"/>')
+ARROW_STYLE['arrow09'] = ('<span u="arrowleft" class="jssora09l" style="width:'
+                          ' 50px; height: 50px; top: 125px; left: 8px;"/><span'
+                          ' u="arrowright" class="jssora09r" style="width: 50p'
+                          'x; height: 50px; top: 125px; right: 8px;"/>')
+ARROW_STYLE['arrow10'] = ('<span u="arrowleft" class="jssora10l" style="width:'
+                          '28px; height: 40px; top: 130px; left: 8px;"/><span '
+                          'u="arrowright" class="jssora10r" style="width: 28px'
+                          '; height: 40px; top: 130px; right: 8px;"/>')
+ARROW_STYLE['arrow11'] = ('<span u="arrowleft" class="jssora11l" style="width:'
+                          ' 37px; height: 37px; top: 131.5px; left: 8px;"/><sp'
+                          'an u="arrowright" class="jssora11r" style="width: 3'
+                          '7px; height: 37px; top: 131.5px; right: 8px;"/>')
+ARROW_STYLE['arrow12'] = ('<span u="arrowleft" class="jssora12l" style="width:'
+                          ' 30px; height: 46px; top: 127px; left: 0px;"/><span'
+                          ' u="arrowright" class="jssora12r" style="width: 30p'
+                          'x; height: 46px; top: 127px; right: 0px;"/>')
+ARROW_STYLE['arrow13'] = ('<span u="arrowleft" class="jssora13l" style="width:'
+                          ' 40px; height: 50px; top: 125px; left: 0px;"/><span'
+                          ' u="arrowright" class="jssora13r" style="width: 40p'
+                          'x; height: 50px; top: 125px; right: 0px;"/>')
+ARROW_STYLE['arrow14'] = ('<span u="arrowleft" class="jssora14l" style="width:'
+                          ' 30px; height: 50px; top: 125px; left: 0px;"/><span'
+                          ' u="arrowright" class="jssora14r" style="width: 30p'
+                          'x; height: 50px; top: 125px; right: 0px;"/>')
+ARROW_STYLE['arrow15'] = ('<span u="arrowleft" class="jssora15l" style="width:'
+                          ' 20px; height: 38px; top: 131px; left: 18px;"/><spa'
+                          'n u="arrowright" class="jssora15r" style="width: 20'
+                          'px; height: 38px; top: 131px; right: 18px;"/>')
+ARROW_STYLE['arrow16'] = ('<span u="arrowleft" class="jssora16l" style="width:'
+                          ' 22px; height: 36px; top: 132px; left: 18px;"/><spa'
+                          'n u="arrowright" class="jssora16r" style="width: 22'
+                          'px; height: 36px; top: 132px; right: 18px;"/>')
+ARROW_STYLE['arrow18'] = ('<span u="arrowleft" class="jssora18l" style="width:'
+                          ' 29px; height: 29px; top: 135.5px; left: 8px;"/><sp'
+                          'an u="arrowright" class="jssora18r" style="width: 2'
+                          '9px; height: 29px; top: 135.5px; right: 8px;"/>')
+ARROW_STYLE['arrow19'] = ('<span u="arrowleft" class="jssora19l" style="width:'
+                          ' 50px; height: 50px; top: 125px; left: 8px;"/><span'
+                          ' u="arrowright" class="jssora19r" style="width: 50p'
+                          'x; height: 50px; top: 125px; right: 8px;"/>')
+ARROW_STYLE['arrow20'] = ('<span u="arrowleft" class="jssora20l" style="width:'
+                          ' 55px; height: 55px; top: 122.5px; left: 8px;"/><sp'
+                          'an u="arrowright" class="jssora20r" style="width: 5'
+                          '5px; height: 55px; top: 122.5px; right: 8px;"/>')
+ARROW_STYLE['arrow21'] = ('<span u="arrowleft" class="jssora21l" style="width:'
+                          ' 55px; height: 55px; top: 122.5px; left: 8px;"/><sp'
+                          'an u="arrowright" class="jssora21r" style="width: 5'
+                          '5px; height: 55px; top: 122.5px; right: 8px;"/>')
 
 BULLET_STYLE = {}
 BULLET_STYLE['bullet01'] = '<div u="navigator" class="jssorb01" style="position:absolute; bottom:16px; right:10px;"><div u="prototype" style="position:absolute; width:12px; height:12px;"/></div>'
@@ -170,7 +244,6 @@ class FeaturedListingCollectionViewlet(ViewletBase):
     @property
     def GlobalDefaults(self):
         """Get global default values"""
-
         return []
 
     @property
@@ -260,7 +333,8 @@ class FeaturedListingCollectionViewlet(ViewletBase):
             try:
                 return int(limit)
             except Exception:
-                msg = _(u"Your Limit setting caused an error. Please check the input.")
+                msg = _(u"Your Limit setting caused an error. Please check the"
+                        "input.")
                 self.context.plone_utils.addPortalMessage(msg, 'error')
 
     @property
@@ -276,7 +350,7 @@ class FeaturedListingCollectionViewlet(ViewletBase):
             try:
                 return int(offset)
             except Exception:
-                msg = _(u"Your Offset setting caused an error. Please check the input.")
+                msg = _(u"Your Offset causes an error. Please check.")
                 self.context.plone_utils.addPortalMessage(msg, 'error')
 
     @property
@@ -300,10 +374,13 @@ class FeaturedListingCollectionViewlet(ViewletBase):
 
         try:
             portal = getSite()
-            return portal.restrictedTraverse(provider_url.encode('ascii', 'ignore'))
+            return portal.restrictedTraverse(provider_url.encode('ascii',
+                                                                 'ignore'))
 
         except Exception:
-            self.context.plone_utils.addPortalMessage("The URL of the itemProvider seems to fail. Please check the configuration tab.", 'error')
+            my_msg = ("The URL of the itemProvider seems to fail. Please check"
+                      " the configuration tab.")
+            self.context.plone_utils.addPortalMessage(my_msg, 'error')
             return None
 
     @property
@@ -312,7 +389,8 @@ class FeaturedListingCollectionViewlet(ViewletBase):
         try:
             return self.ItemProvider.absolute_url()
         except Exception:
-            self.context.plone_utils.addPortalMessage("Problem with the Item Provider URL", 'warning')
+            my_msg = "Problem with the Item Provider URL"
+            self.context.plone_utils.addPortalMessage(my_msg, 'warning')
             return False
 
     def getProviders(self):
@@ -338,7 +416,7 @@ class FeaturedListingCollectionViewlet(ViewletBase):
             if results is not None:
                 return results
             else:
-                msg = _(u"No MLS results found. Please check the configuration")
+                msg = _(u"No MLS results found. Please check the config")
                 self.context.plone_utils.addPortalMessage(msg, 'error')
 
         except Exception:
@@ -415,10 +493,14 @@ class FeaturedListingCollectionViewlet(ViewletBase):
                 if iurl is not None:
                     data[index]['lead_image'] = iurl.replace('FLSSIZE', isize)
                     # add thumbnail path
-                    data[index]['lead_image_thumb'] = iurl.replace('FLSSIZE', 'thumb')
-                    data[index]['lead_image_mini'] = iurl.replace('FLSSIZE', 'mini')
-                    data[index]['lead_image_preview'] = iurl.replace('FLSSIZE', 'preview')
-                    data[index]['lead_image_large'] = iurl.replace('FLSSIZE', 'large')
+                    data[index]['lead_image_thumb'] = iurl.replace('FLSSIZE',
+                                                                   'thumb')
+                    data[index]['lead_image_mini'] = iurl.replace('FLSSIZE',
+                                                                  'mini')
+                    data[index]['lead_image_preview'] = iurl.replace('FLSSIZE',
+                                                                     'preview')
+                    data[index]['lead_image_large'] = iurl.replace('FLSSIZE',
+                                                                   'large')
 
             except Exception, e:
                 """something wrong with the url?"""
@@ -557,7 +639,8 @@ class IItemProvider(Interface):
     viewlet_positionClass = schema.Choice(
         title=_(u'Slider Position'),
         description=_(
-            u'Choose the Position Class for this slider. This is used to place it in different areas in your theme.'
+            u'Choose the Position Class for this slider. This is used to place'
+            ' it in different areas in your theme.'
         ),
         required=True,
         default='aboveContent',
@@ -571,7 +654,8 @@ class IItemProvider(Interface):
             default=u'Content Provider',
         ),
         description=_(
-            u'Please enter the PATH to the Collection which holds the items for the Slider. Example{ /Plone/en/listing-collection }'
+            u'Please enter the PATH to the Collection which holds the items '
+            'for the Slider. Example{ /Plone/en/listing-collection }'
         ),
     )
 
@@ -583,7 +667,10 @@ class IItemProvider(Interface):
             default=u"Is a MLS Listing Slider?",
         ),
         description=_(
-            u'To ensure the Slider shows the correct content please check this checkbox if you want to show Listings from your MLS. If the checkbox is not active, the Slider will try to find internal Plone content as Slides'
+            u'To ensure the Slider shows the correct content please check this'
+            ' checkbox if you want to show Listings from your MLS. If the c'
+            'heckbox is not active, the Slider will try to find internal Plone'
+            ' content as Slides'
         ),
     )
 
@@ -594,7 +681,8 @@ class IItemProvider(Interface):
             u"label_FLS_limit",
             default=u"Limit Content Provider Items",
         ),
-        description=_(u'To avoid endless loading times, limit the Items from the Content Provider above.')
+        description=_(u'To avoid endless loading times, limit the Items from '
+                      'the Content Provider above.')
     )
 
     featuredListingSlider_ImageSize = schema.Choice(
@@ -640,7 +728,11 @@ class IPlayerOptions(Interface):
 
     FLS_FillMode = schema.Choice(
         default=u"4",
-        description=_(u'The way to fill image in slide, (0): stretch, (1): contain (keep aspect ratio and put all inside slide), (2): cover (keep aspect ratio and cover whole slide), (4): actual size, (5): contain for large image, actual size for small image'),
+        description=_(u'The way to fill image in slide, (0): stretch, (1): '
+                      'contain (keep aspect ratio and put all inside slide), '
+                      '(2): cover (keep aspect ratio and cover whole slide), '
+                      '(4): actual size, (5): contain for large image, actual'
+                      ' size for small image'),
         required=False,
         title=_(
             u"label_FLS_FillMode",
@@ -660,7 +752,8 @@ class IPlayerOptions(Interface):
 
     FLS_AutoPlayInterval = schema.TextLine(
         default=u"6000",
-        description=_(u'Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing'),
+        description=_(u'Interval (in milliseconds) to go for next slide since '
+                      'the previous stopped if the slider is auto playing'),
         required=False,
         title=_(
             u"label_FLS_AutoPlayInterval",
@@ -670,7 +763,8 @@ class IPlayerOptions(Interface):
 
     FLS_AutoPlaySteps = schema.Choice(
         default=u"1",
-        description=_(u'Steps to go for each navigation request (this options applys only when slideshow disabled).'),
+        description=_(u'Steps to go for each navigation request (this options '
+                      'applys only when slideshow disabled).'),
         required=False,
         title=_(
             u"label_FLS_AutoPlaySteps",
@@ -715,7 +809,8 @@ class IPlayerOptions(Interface):
 
     SS_TransitionsOrder = schema.Choice(
         default=u"1",
-        description=_(u'The way to choose between multiple transition, (1): Sequence [default], (0): Random'),
+        description=_(u'The way to choose between multiple transition, (1): '
+                      'Sequence [default], (0): Random'),
         required=False,
         title=_(
             u"label_SS_TransitionOrder",
@@ -731,12 +826,16 @@ class IPlayerOptions(Interface):
             u"label_SS_ShowLink",
             default=u"Show Slide Link?",
         ),
-        description=_(u'Whether to bring slide link on top of the slider when slideshow is running, [default = false]'),
+        description=_(u'Whether to bring slide link on top of the slider when '
+                      'slideshow is running, [default = false]'),
     )
 
     FLS_PauseOnHover = schema.Choice(
         default=u"3",
-        description=_(u'Whether to pause when mouse over if a slider is auto playing, (0): no pause, (1): pause for desktop, (2): pause for touch device, (3): pause for desktop and touch device'),
+        description=_(u'Whether to pause when mouse over if a slider is auto '
+                      'playing, (0): no pause, (1): pause for desktop, (2): '
+                      'pause for touch device, (3): pause for desktop and '
+                      'touch device'),
         required=False,
         title=_(
             u"label_FLS_PauseOnHover",
@@ -752,7 +851,8 @@ class IPlayerOptions(Interface):
             u"label_FLS_Loop",
             default=u"Slider Loop Behaviour",
         ),
-        description=_(u'Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind'),
+        description=_(u'Enable loop(circular) of carousel or not, 0: stop, 1: '
+                      'loop, 2 rewind'),
         values=["0", "1", "2"]
     )
 
@@ -763,7 +863,9 @@ class IPlayerOptions(Interface):
             u"label_FLS_PlayOrientation",
             default=u"Slider Play Orientation",
         ),
-        description=_(u'Orientation to play slide (for auto play, navigation), 1: horizental, 2: vertical, 5: horizental reverse, 6: vertical reverse'),
+        description=_(u'Orientation to play slide (for auto play, navigation),'
+                      ' 1: horizental, 2: vertical, 5: horizental reverse, 6: '
+                      'vertical reverse'),
         values=["1", "2", "5", "6"]
     )
 
@@ -779,7 +881,8 @@ class ISlideConfig(Interface):
             default=u"Stage Height",
         ),
         description=_(
-            u'Set the height of the slider stage box (default:350px). The value can be entered with as css compatible unit (px, %, em, ...).'
+            u'Set the height of the slider stage box (default:350px). The '
+            'value can be entered with as css compatible unit (px, %, ...).'
         ),
     )
 
@@ -790,12 +893,14 @@ class ISlideConfig(Interface):
             u"label_FLS_width",
             default=u"max. Stage Width",
         ),
-        description=_(u'Set the max-width of the slider Stage box (default:940). The value is in px.')
+        description=_(u'Set the max-width of the slider Stage box (default:'
+                      '940). The value is in px.')
     )
 
     FLS_DisplayPieces = schema.Choice(
         default=u"1",
-        description=_(u'Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1)'),
+        description=_(u'Number of pieces to display (the slideshow would be '
+                      'disabled if the value is set to greater than 1)'),
         required=False,
         title=_(
             u"label_FLS_DisplayPieces",
@@ -805,7 +910,8 @@ class ISlideConfig(Interface):
     )
 
     FLS_SlideWidth = schema.TextLine(
-        description=_(u'Width of every slide in pixels, default value is width of "slides" container'),
+        description=_(u'Width of every slide in pixels, default value is width'
+                      ' of "slides" container'),
         required=False,
         title=_(
             u"label_FLS_SlideWidth",
@@ -814,7 +920,8 @@ class ISlideConfig(Interface):
     )
 
     FLS_SlideHeight = schema.TextLine(
-        description=_(u"Height of every slide in pixels, default value is height of 'slides' container"),
+        description=_(u"Height of every slide in pixels, default value is "
+                      "height of 'slides' container"),
         required=False,
         title=_(
             u"label_FLS_SlideHeight",
@@ -833,7 +940,7 @@ class ISlideConfig(Interface):
 
     FLS_StartIndex = schema.Choice(
         default=u"0",
-        description=_(u'Index of the slide to display start, default value is 0'),
+        description=_(u'Index of slide at display start, default value is 0'),
         required=False,
         title=_(
             u"label_FLS_StartIndex",
@@ -843,7 +950,8 @@ class ISlideConfig(Interface):
     )
 
     FLS_ParkingPosition = schema.TextLine(
-        description=_(u'The offset position to park slide (this options applys only when slideshow disabled)'),
+        description=_(u'The offset position to park slide (this options applys'
+                      ' only when slideshow disabled)'),
         required=False,
         title=_(
             u"label_FLS_ParkingPosition",
@@ -863,7 +971,7 @@ class IBulletPointNavigator(Interface):
             default=u"Activate BulletPointNavigator",
         ),
         description=_(
-            u'The activated Navigator adds a BulletPoint Navigation to the Slider'
+            u'Adds a BulletPoint Navigation to the Slider'
         ),
     )
 
@@ -888,21 +996,24 @@ class IBulletPointNavigator(Interface):
     )
     BNO_AutoCenter = schema.Choice(
         default=u'3',
-        description=_(u'[Optional] Auto center navigator in parent container, 0: None, 1: Horizontal, 2: Vertical, 3: Both'),
+        description=_(u'[Optional] Auto center navigator in parent container, '
+                      '0: None, 1: Horizontal, 2: Vertical, 3: Both'),
         required=False,
         title=_(u'Auto Center?'),
         values=["0", "1", "2", "3"]
     )
     BNO_Steps = schema.Choice(
         default=u'1',
-        description=_(u'[Optional] Steps to go for each navigation request, default value is 1'),
+        description=_(u'[Optional] Steps to go for each navigation request, '
+                      'default value is 1'),
         required=False,
         title=_(u'Bullet Navigator Steps'),
         values=SLIDER_STEPS
     )
     BNO_Lanes = schema.Choice(
         default=u'2',
-        description=_(u'[Optional] Specify lanes to arrange items, default value is 1'),
+        description=_(u'[Optional] Specify lanes to arrange items, default '
+                      'value is 1'),
         required=False,
         title=_(u'Bullet Navigator Lanes'),
         values=SLIDER_STEPS
@@ -913,7 +1024,8 @@ class IBulletPointNavigator(Interface):
         title=_(
             u"label_BNO_Orientation",
             default=u"Orientation"),
-        description=_(u'[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1'),
+        description=_(u'[Optional] The orientation of the navigator, 1 '
+                      'horizontal, 2 vertical, default value is 1'),
         values=["1", "2"]
     )
     BNO_SpacingX = schema.TextLine(
@@ -922,7 +1034,8 @@ class IBulletPointNavigator(Interface):
         title=_(
             u'label_BNO_SpacingX',
             default=u'SpacingX'),
-        description=_(u'[Optional] Horizontal space between each item in pixel, default value is 0')
+        description=_(u'[Optional] Horizontal space between each item in pixel'
+                      ', default value is 0')
     )
     BNO_SpacingY = schema.TextLine(
         default=u'0',
@@ -930,7 +1043,8 @@ class IBulletPointNavigator(Interface):
         title=_(
             u'label_BNO_SpacingY',
             default=u'SpacingY'),
-        description=_(u'[Optional] Vertical space between each item in pixel, default value is 0')
+        description=_(u'[Optional] Vertical space between each item in pixel,'
+                      ' default value is 0')
     )
 
     BNO_genericTemplate = schema.Text(
@@ -940,7 +1054,8 @@ class IBulletPointNavigator(Interface):
             default=u'This template is auto-generated from the settings',
         ),
         required=False,
-        title=PMF(u'label__BNO_genericTemplate', default=u'Generated BulletPointNavigator Template'),
+        title=PMF(u'label__BNO_genericTemplate',
+                  default=u'Generated BulletPointNavigator Template'),
         readonly=True
     )
     BNO_useCustomTemplate = schema.Bool(
@@ -958,7 +1073,8 @@ class IBulletPointNavigator(Interface):
             default=u'This template can be adjusted',
         ),
         required=False,
-        title=PMF(u'label__BNO_customTemplate', default=u'Custom Bullet Point Navigation'),
+        title=PMF(u'label__BNO_customTemplate',
+                  default=u'Custom Bullet Point Navigation'),
     )
 
 
@@ -973,7 +1089,8 @@ class IArrowNavigator(Interface):
             default=u"Activate ArrowNavigator",
         ),
         description=_(
-            u'The activated Navigator adds a Arrow Navigator (prev & next) to the Slider'
+            u'The activated Navigator adds a Arrow Navigator (prev & next) to '
+            'the Slider'
         ),
     )
 
@@ -1007,7 +1124,8 @@ class IArrowNavigator(Interface):
 
     AN_Steps = schema.Choice(
         default=u'1',
-        description=_(u'[Optional] Steps to go for each navigation request, default value is 1'),
+        description=_(u'[Optional] Steps to go for each navigation request, '
+                      'default value is 1'),
         required=False,
         title=_(u'Arrow Navigator Steps'),
         values=SLIDER_STEPS
@@ -1032,7 +1150,8 @@ class IArrowNavigator(Interface):
             default=u'This template is auto-generated from the settings',
         ),
         required=False,
-        title=PMF(u'label__FLS_genericTemplate', default=u'Generated ArrowNavigator Template'),
+        title=PMF(u'label__FLS_genericTemplate', default=u'Generated '
+                  'ArrowNavigator Template'),
         readonly=True
     )
 
@@ -1052,7 +1171,8 @@ class IArrowNavigator(Interface):
             default=u'This template can be adjusted',
         ),
         required=False,
-        title=PMF(u'label__FLS_customTemplate', default=u'Custom Arrow Navigation'),
+        title=PMF(u'label__FLS_customTemplate',
+                  default=u'Custom Arrow Navigation'),
     )
 
 
@@ -1101,7 +1221,8 @@ class IThumbnailNavigator(Interface):
             u"label_TNO_Loop",
             default=u"Thumbnail Loop Behaviour",
         ),
-        description=_(u'Enable loop(circular) of carousel or not, (0): stop, (1): loop, (2): rewind'),
+        description=_(u'Enable loop(circular) of carousel or not, (0): stop, '
+                      '(1): loop, (2): rewind'),
         values=["0", "1", "2"]
     )
 
@@ -1114,14 +1235,16 @@ class IThumbnailNavigator(Interface):
     )
     TNO_ActionMode = schema.Choice(
         default=u'1',
-        description=_(u'(0): None, (1): act by click [default], (2): act by mouse hover, (3): both'),
+        description=_(u'(0): None, (1): act by click [default], (2): act by '
+                      'mouse hover, (3): both'),
         required=False,
         title=_(u'Action Mode?'),
         values=["0", "1", "2", "3"]
     )
     TNO_AutoCenter = schema.Choice(
         default=u'1',
-        description=_(u'[Optional] Auto center thumbnails in parent container, 0: None, 1: Horizontal, 2: Vertical, 3: Both'),
+        description=_(u'[Optional] Auto center thumbnails in parent container,'
+                      ' 0: None, 1: Horizontal, 2: Vertical, 3: Both'),
         required=False,
         title=_(u'Auto Center?'),
         values=["0", "1", "2", "3"]
@@ -1129,7 +1252,7 @@ class IThumbnailNavigator(Interface):
 
     TNO_Lanes = schema.Choice(
         default=u'1',
-        description=_(u'[Optional] Specify lanes to arrange thumbnails [default=1]'),
+        description=_(u'Nr. of lanes to arrange thumbnails [default=1]'),
         required=False,
         title=_(u'Thumbnail Lanes'),
         values=SLIDER_STEPS
@@ -1141,7 +1264,8 @@ class IThumbnailNavigator(Interface):
         title=_(
             u'label_TNO_SpacingX',
             default=u'SpacingX'),
-        description=_(u'[Optional] Horizontal space between each item in pixel, default value is 0')
+        description=_(u'[Optional] Horizontal space between each item in pixel'
+                      ', default value is 0')
     )
 
     TNO_SpacingY = schema.TextLine(
@@ -1150,7 +1274,8 @@ class IThumbnailNavigator(Interface):
         title=_(
             u'label_TNO_SpacingY',
             default=u'SpacingY'),
-        description=_(u'[Optional] Vertical space between each item in pixel, default value is 0')
+        description=_(u'[Optional] Vertical space between each item in pixel,'
+                      ' default value is 0')
     )
 
     TNO_DisplayPieces = schema.Choice(
@@ -1176,7 +1301,8 @@ class IThumbnailNavigator(Interface):
         title=_(
             u"label_BNO_Orientation",
             default=u"Orientation"),
-        description=_(u'[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1'),
+        description=_(u'[Optional] The orientation of the navigator, 1 '
+                      'horizontal, 2 vertical, default value is 1'),
         values=["1", "2"]
     )
 
@@ -1188,7 +1314,7 @@ class IThumbnailNavigator(Interface):
             default=u"Scale Thumbnails?",
         ),
         description=_(
-            u'Scales thumbnail navigator or not while slider scale? [default=true]'
+            u'Scales thumbnail navigator while slider scale? [default=true]'
         ),
     )
 
@@ -1211,7 +1337,8 @@ class IThumbnailNavigator(Interface):
             default=u'This template is auto-generated from the settings',
         ),
         required=False,
-        title=PMF(u'label__BNO_genericTemplate', default=u'Generated Thumbnail Navigation Template'),
+        title=PMF(u'label__BNO_genericTemplate',
+                  default=u'Generated Thumbnail Navigation Template'),
         readonly=True
     )
 
@@ -1231,7 +1358,8 @@ class IThumbnailNavigator(Interface):
             default=u'This template can be adjusted',
         ),
         required=False,
-        title=PMF(u'label__TNO_customTemplate', default=u'Custom Thumbnail Navigation'),
+        title=PMF(u'label__TNO_customTemplate',
+                  default=u'Custom Thumbnail Navigation'),
     )
 
 
@@ -1251,7 +1379,8 @@ class ICaptionSlider(Interface):
 
     CS_StageType = schema.Choice(
         default=u"Box",
-        description=_(u'(Box): height:30%, width:30% (Column): height:100%, width:30% (Row): height:20%, width:100%'),
+        description=_(u'(Box): height:30%, width:30% (Column): height:100%, '
+                      'width:30% (Row): height:20%, width:100%'),
         required=True,
         title=_(
             u"label_CS_StageType",
@@ -1316,7 +1445,9 @@ class ICaptionSlider(Interface):
 
     CS_PlayInMode = schema.Choice(
         default=u"1",
-        description=_(u'(0): None (no play), (1): Chain (goes after main slide)[default], (3): Chain Flatten (goes after main slide and flatten all caption animations)'),
+        description=_(u'(0): None (no play), (1): Chain (goes after main slide'
+                      ')[default], (3): Chain Flatten (goes after main slide '
+                      'and flatten all caption animations)'),
         required=False,
         title=_(
             u"label_CS_PlayInMode",
@@ -1881,7 +2012,10 @@ class CollectionViewletConfiguration(group.GroupForm, form.Form):
                 data['BNO_genericTemplate'] = self.__generateBNTemplate(data)
 
             except(Exception):
-                self.context.plone_utils.addPortalMessage("There was a problem with the script generation. Please check the Slider Settings if a text field contains invalid content. ", 'error')
+                my_msg = ("There was a problem with the script generation. "
+                          "Please check the Slider Settings if a text field"
+                          " contains invalid content.")
+                self.context.plone_utils.addPortalMessage(my_msg, 'error')
 
             annotations = IAnnotations(self.context)
             key = self.getConfigurationKey
@@ -1917,7 +2051,9 @@ class CollectionViewletStatus(object):
 
 class CollectionViewletToggle(object):
     """Toggle HeaderPlugins viewlet for the current context."""
-    GROUP_INTERFACES = (ICollectionViewletConfiguration, IItemProvider, IPlayerOptions, ISlideConfig, IBulletPointNavigator, IExtendedNavigation, IExpertConfig, ICustomCode)
+    GROUP_INTERFACES = (ICollectionViewletConfiguration, IItemProvider,
+                        IPlayerOptions, ISlideConfig, IBulletPointNavigator,
+                        IExtendedNavigation, IExpertConfig, ICustomCode)
 
     def __init__(self, context, request):
         self.context = context
