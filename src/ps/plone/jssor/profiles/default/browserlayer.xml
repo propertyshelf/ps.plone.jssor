@@ -2,6 +2,6 @@
 <layers>
   <layer
     name="ps.plone.jssor"
-    interface="ps.plone.jssor.interfaces.IPsPloneJssorLayer"
+    interface="ps.plone.jssor.browser.interfaces.IJssorViewlets"
   />
 </layers>

@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Interface definitions."""
+"""Module where all interfaces, events and exceptions live."""
 
-# zope imports
-from plone.theme.interfaces import IDefaultPloneLayer
+from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 
-class IJssorViewlets(IDefaultPloneLayer):
+class IJssorViewlets(IDefaultBrowserLayer):
     """Marker interface that defines a Zope 3 browser layer."""
