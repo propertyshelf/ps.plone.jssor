@@ -15,12 +15,17 @@ from zope.component.hooks import getSite
 from zope.interface import Interface, alsoProvides, noLongerProvides
 from zope.traversing.browser.absoluteurl import absoluteURL
 
-# plone.mls.listing imports
-from plone.mls.listing import api
-from plone.mls.listing.browser import (
-    listing_collection,
-    recent_listings,
-)
+try:
+    # plone.mls.listing imports
+    from plone.mls.listing import api
+    from plone.mls.listing.browser import (
+        listing_collection,
+        recent_listings,
+    )
+    has_PSExtensions = True
+except ImportError:
+    has_PSExtensions = False
+
 try:
     from ps.plone.mls.browser.listings import featured
     has_PSExtensions = True
@@ -191,25 +196,25 @@ SlidesCSS['thumb11'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600
 SlidesCSS['thumb12'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'
 
 
-class IPossibleCollectionViewlet(Interface):
+class IPossibleSliderViewlet(Interface):
     """Marker interface for possible Collection viewlet."""
 
 
-class ICollectionViewlet(Interface):
+class ISliderViewlet(Interface):
     """Marker interface for Collection viewlet."""
 
 
-class FeaturedListingCollectionViewlet(ViewletBase):
+class SliderViewlet(ViewletBase):
     """Show Collection viewlet in header"""
 
     @property
     def available(self):
 
-        return IPossibleCollectionViewlet.providedBy(self.context) and \
-            not ICollectionViewlet.providedBy(self.context)
+        return IPossibleSliderViewlet.providedBy(self.context) and \
+            not ISliderViewlet.providedBy(self.context)
 
     def update(self):
-        super(FeaturedListingCollectionViewlet, self).update()
+        super(SliderViewlet, self).update()
 
     @property
     def local_config(self):
@@ -622,7 +627,7 @@ class FeaturedListingCollectionViewlet(ViewletBase):
             return False
 
 
-class ICollectionViewletConfiguration(Interface):
+class ISliderViewletConfiguration(Interface):
     """FLS Configuration Form."""
 
 
@@ -1668,10 +1673,10 @@ class CustomCodeGroup(FormBaseGroup):
     fields = field.Fields(ICustomCode)
 
 
-class CollectionViewletConfiguration(group.GroupForm, form.Form):
+class SliderViewletConfiguration(group.GroupForm, form.Form):
     """HeaderPlugin Configuration Form."""
 
-    fields = field.Fields(ICollectionViewletConfiguration)
+    fields = field.Fields(ISliderViewletConfiguration)
     groups = (ItemProviderGroup, PlayerOptionsGroup, SlideConfigGroup, BulletNavigatorGroup, ArrowNavigatorGroup, ThumbnailNavigatorGroup, CaptionSliderGroup, ExtendedNavigationGroup, ExpertGroup, CustomCodeGroup)
 
     ignoreContext = False
@@ -1683,12 +1688,12 @@ class CollectionViewletConfiguration(group.GroupForm, form.Form):
 
     def __init__(self, context, request):
         """Customized form constructor"""
-        super(CollectionViewletConfiguration, self).__init__(context, request)
+        super(SliderViewletConfiguration, self).__init__(context, request)
         self.context = context
         self.request = request
 
     def updateWidgets(self):
-        super(CollectionViewletConfiguration, self).updateWidgets()
+        super(SliderViewletConfiguration, self).updateWidgets()
 
     @property
     def getConfigurationKey(self):
@@ -2032,8 +2037,8 @@ class CollectionViewletConfiguration(group.GroupForm, form.Form):
         self.request.response.redirect(absoluteURL(self.context, self.request))
 
 
-class CollectionViewletStatus(object):
-    """Return activation/deactivation status of HeaderCollection viewlet."""
+class SliderViewletStatus(object):
+    """Return activation/deactivation status of  viewlet."""
 
     def __init__(self, context, request):
         self.context = context
@@ -2041,17 +2046,17 @@ class CollectionViewletStatus(object):
 
     @property
     def can_activate(self):
-        return IPossibleCollectionViewlet.providedBy(self.context) and \
-            not ICollectionViewlet.providedBy(self.context)
+        return IPossibleSliderViewlet.providedBy(self.context) and \
+            not ISliderViewlet.providedBy(self.context)
 
     @property
     def active(self):
-        return ICollectionViewlet.providedBy(self.context)
+        return ISliderViewlet.providedBy(self.context)
 
 
-class CollectionViewletToggle(object):
+class SliderViewletToggle(object):
     """Toggle HeaderPlugins viewlet for the current context."""
-    GROUP_INTERFACES = (ICollectionViewletConfiguration, IItemProvider,
+    GROUP_INTERFACES = (ISliderViewletConfiguration, IItemProvider,
                         IPlayerOptions, ISlideConfig, IBulletPointNavigator,
                         IExtendedNavigation, IExpertConfig, ICustomCode)
 
@@ -2062,9 +2067,9 @@ class CollectionViewletToggle(object):
     def __call__(self):
         msg_type = 'info'
 
-        if ICollectionViewlet.providedBy(self.context):
+        if ISliderViewlet.providedBy(self.context):
             # Deactivate.
-            noLongerProvides(self.context, ICollectionViewlet)
+            noLongerProvides(self.context, ISliderViewlet)
             # REMOVE all custom group interfaces from our context object
             for ginterface in self.GROUP_INTERFACES:
                 if ginterface.providedBy(self.context):
@@ -2072,8 +2077,8 @@ class CollectionViewletToggle(object):
 
             self.context.reindexObject(idxs=['object_provides', ])
             msg = _(u"Collection viewlet deactivated.")
-        elif IPossibleCollectionViewlet.providedBy(self.context):
-            alsoProvides(self.context, ICollectionViewlet)
+        elif IPossibleSliderViewlet.providedBy(self.context):
+            alsoProvides(self.context, ISliderViewlet)
 
             # add all missing custom group interfaces to our context object
             for ginterface in self.GROUP_INTERFACES:
@@ -2086,7 +2091,7 @@ class CollectionViewletToggle(object):
         else:
             msg = _(
                 u"The Collection viewlet does't work with this content "
-                u"type. Add 'IPossibleCollectionViewlet' to the provided "
+                u"type. Add 'IPossibleSliderViewlet' to the provided "
                 u"interfaces to enable this feature."
             )
             msg_type = 'error'
