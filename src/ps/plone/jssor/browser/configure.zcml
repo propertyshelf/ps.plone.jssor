@@ -17,4 +17,40 @@
         directory="static"
         />
 
+  <!-- Slider Plugins. -->
+  <!-- ================ -->
+  <browser:viewlet
+      class=".slider.FeaturedListingCollectionViewlet"
+      for=".slider.ICollectionViewlet"
+      layer=".interfaces.IJssorViewlets"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      name="theming.toolkit.viewlets.featuredlisting-collection-above"
+      permission="zope2.View"
+      template="templates/slider_viewlet.pt"
+      />
+
+  <browser:page
+      class=".slider.CollectionViewletConfiguration"
+      for=".slider.ICollectionViewlet"
+      layer=".interfaces.IJssorViewlets"
+      name="featuredlisting-collection-config-above"
+      permission="cmf.ModifyPortalContent"
+      />
+
+  <browser:page
+      class=".slider.CollectionViewletStatus"
+      for="*"
+      layer=".interfaces.IJssorViewlets"
+      name="featuredlisting-collection-status-above"
+      permission="cmf.ModifyPortalContent"
+      />
+
+  <browser:page
+      class=".slider.CollectionViewletToggle"
+      for="*"
+      layer=".interfaces.IJssorViewlets"
+      name="featuredlisting-collection-toggle-above"
+      permission="cmf.ModifyPortalContent"
+      />
+
 </configure>
