@@ -1676,7 +1676,7 @@ class CollectionViewletConfiguration(group.GroupForm, form.Form):
 
     ignoreContext = False
 
-    label = _(u"Configure your PS Slider.")
+    label = _(u"Configure your Slider.")
     description = _(
         u"Adjust the slider settings."
     )
