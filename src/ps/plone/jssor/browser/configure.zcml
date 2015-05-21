@@ -17,39 +17,42 @@
         directory="static"
         />
 
+    <!-- include permissions -->
+    <include package="Products.CMFCore" file="permissions.zcml" />
+
   <!-- Slider Plugins. -->
   <!-- ================ -->
   <browser:viewlet
-      class=".slider.FeaturedListingCollectionViewlet"
-      for=".slider.ICollectionViewlet"
+      class=".slider.SliderViewlet"
+      for=".slider.ISliderViewlet"
       layer=".interfaces.IJssorViewlets"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"
-      name="theming.toolkit.viewlets.featuredlisting-collection-above"
+      name="ps.plone.jssor.slider-above"
       permission="zope2.View"
       template="templates/slider_viewlet.pt"
       />
 
   <browser:page
-      class=".slider.CollectionViewletConfiguration"
-      for=".slider.ICollectionViewlet"
+      class=".slider.SliderViewletConfiguration"
+      for=".slider.ISliderViewlet"
       layer=".interfaces.IJssorViewlets"
-      name="featuredlisting-collection-config-above"
+      name="slider-config-above"
       permission="cmf.ModifyPortalContent"
       />
 
   <browser:page
-      class=".slider.CollectionViewletStatus"
+      class=".slider.SliderViewletStatus"
       for="*"
       layer=".interfaces.IJssorViewlets"
-      name="featuredlisting-collection-status-above"
+      name="slider-status-above"
       permission="cmf.ModifyPortalContent"
       />
 
   <browser:page
-      class=".slider.CollectionViewletToggle"
+      class=".slider.SliderViewletToggle"
       for="*"
       layer=".interfaces.IJssorViewlets"
-      name="featuredlisting-collection-toggle-above"
+      name="slider-toggle-above"
       permission="cmf.ModifyPortalContent"
       />
 
