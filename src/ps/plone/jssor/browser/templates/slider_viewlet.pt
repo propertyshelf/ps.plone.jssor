@@ -7,17 +7,18 @@
       tal:omit-tag="">
 
 <body tal:define="results view/results|nothing;
-                  viewletClass string:featured-listing-top ps_slider top ${view/get_PositionClass}">
+                  viewletClass string:featured-listing-top ps_slider top ${view/get_PositionClass}"
+                  tal:condition="results" >
 <div tal:attributes="class viewletClass">
-  <div class="slider_title">
-    <h2 tal:content="view/get_title" />
+  <div class="slider_title" tal:define="title view/get_title" tal:condition="title">
+    <h2 tal:content="title" />
   </div>
   <!-- include gallery JS -->
-  <div class="fls-script" id="fls-script-top">
+  <div class="fls-script" id="fls-script-top" tal:define="script view/get_code|nothing" tal:condition="script">
     <script type="text/javascript" src="++resource++ps.plone.jssor/jssor.slider.mini.js" />
     <script type="text/javascript" src="++resource++ps.plone.jssor/fls_integration.js" />
    
-    <div class="sliderscript" tal:content="structure view/get_code|nothing"/>
+    <div class="sliderscript" tal:content="structure script"/>
   </div>
 <div class="fls-wrapper" id="fls-top-wrapper"
     tal:define="stageCSS view/StageCss;
@@ -27,9 +28,6 @@
       <tal:results
           tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                       wraplink python:True;">
-        <div tal:condition="not:results">
-          <p i18n:translate="">Please check the Content Provider Settings of this Slideshow. The given path don't connect to a collection with results, so please ensure your settings are correct.</p>
-        </div>
       <tal:loader tal:condition="view/haveLoader">
         <!-- Loading Screen -->
         <div u="loading" style="position:absolute;top:0px;left:0px;">
