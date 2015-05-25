@@ -28,6 +28,6 @@ class TestInstall(unittest.TestCase):
     # browserlayer.xml
     def test_browserlayer(self):
         """Test that IPsPloneJssorLayer is registered."""
-        from ps.plone.jssor.interfaces import IPsPloneJssorLayer
+        from ps.plone.jssor.browser.interfaces import IJssorViewlets
         from plone.browserlayer import utils
-        self.assertIn(IPsPloneJssorLayer, utils.registered_layers())
+        self.assertIn(IJssorViewlets, utils.registered_layers())
