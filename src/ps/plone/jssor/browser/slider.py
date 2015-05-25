@@ -197,15 +197,15 @@ SlidesCSS['thumb12'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600
 
 
 class IPossibleSliderViewlet(Interface):
-    """Marker interface for possible Collection viewlet."""
+    """Marker interface for possible Slider viewlet."""
 
 
 class ISliderViewlet(Interface):
-    """Marker interface for Collection viewlet."""
+    """Marker interface for Slider viewlet."""
 
 
 class SliderViewlet(ViewletBase):
-    """Show Collection viewlet in header"""
+    """Show Slider viewlet in header"""
 
     @property
     def available(self):
@@ -2076,7 +2076,7 @@ class SliderViewletToggle(object):
                     noLongerProvides(self.context, ginterface)
 
             self.context.reindexObject(idxs=['object_provides', ])
-            msg = _(u"Collection viewlet deactivated.")
+            msg = _(u"Listing Slider viewlet deactivated.")
         elif IPossibleSliderViewlet.providedBy(self.context):
             alsoProvides(self.context, ISliderViewlet)
 
@@ -2087,10 +2087,10 @@ class SliderViewletToggle(object):
 
             self.context.reindexObject(idxs=['object_provides', ])
 
-            msg = _(u"Collection viewlet activated.")
+            msg = _(u"Listing Slider viewlet activated.")
         else:
             msg = _(
-                u"The Collection viewlet does't work with this content "
+                u"The Listing Slider viewlet does't work with this content "
                 u"type. Add 'IPossibleSliderViewlet' to the provided "
                 u"interfaces to enable this feature."
             )
