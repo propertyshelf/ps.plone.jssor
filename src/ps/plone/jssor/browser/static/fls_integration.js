@@ -26,6 +26,7 @@ function resize2pixel(element, mode){
 
 function PSScaleSlider(obj) {
     console.log('responsive Slider Rasta');
+    /*
     console.log(obj);
     var parentWidth = $('.ps_slider_wrapper').parent().width();
     console.log(parentWidth);
@@ -45,4 +46,5 @@ function PSScaleSlider(obj) {
 
     $(window).bind("resize", PSScaleSlider(obj));
     $(window).bind("orientationchange", PSScaleSlider(obj));
+    */
 }

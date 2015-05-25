@@ -596,10 +596,11 @@ class SliderViewlet(ViewletBase):
         """Do we want the load indicator image"""
         return self.Settings.get('FLS_loader', False)
 
+    """
     @property
     def isResponsive(self):
-        """responsive slider?"""
-        return self.Settings.get('FLS_responsiveSlider', False)
+      return self.Settings.get('FLS_responsiveSlider', False)
+    """
 
     @property
     def CaptionCSSClass(self):
@@ -1997,12 +1998,12 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
             # define the slider
             script += " var %s = new $JssorSlider$('%s', options);" % (stage_dict['js_name'], stage_dict['id'])
             # catch JS Errors
-            script += " } catch(error){console.log(err);}"
+            script += " } catch(error){console.log(error);}"
             # responsive script
             r_script = '$(window).bind("resize", PSScaleSlider(%s));' % (stage_dict['js_name'])
             r_script += '$(window).bind("orientationchange", PSScaleSlider(%s));' % (stage_dict['js_name'])
 
-            return script + r_script
+            return script
 
     @button.buttonAndHandler(_(u'Save'))
     def handle_save(self, action):
