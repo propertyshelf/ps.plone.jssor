@@ -68,85 +68,105 @@ SLIDER_POSITION_BOTTOM = ['belowContentArea', 'belowColumns', 'aboveColophone',
 
 ARROW_STYLE = {}
 ARROW_STYLE['arrow01'] = ('<span u="arrowleft" class="jssora01l" style="width:'
-                          ' 45px; height: 45px; top: 127.5px; left: 8px;"/>'
-                          '<span u="arrowright" class="jssora01r" style="width'
-                          ': 45px; height: 45px; top: 127.5px; right: 8px;"/>')
+                          ' 45px; height: 45px; top: 127.5px; left: 8px;">'
+                          '</span><span u="arrowright" class="jssora01r" '
+                          'style="width: 45px; height: 45px; top: 127.5px;'
+                          ' right: 8px;"></span>')
 ARROW_STYLE['arrow02'] = ('<span u="arrowleft" class="jssora02l" style="width:'
-                          ' 55px; height: 55px; top: 122.5px; left: 8px;"/><sp'
-                          'an u="arrowright" class="jssora02r" style="width: 5'
-                          '5px; height: 55px; top: 122.5px; right: 8px;"/>')
+                          ' 55px; height: 55px; top: 122.5px; left: 8px;"></sp'
+                          'an><span u="arrowright" class="jssora02r" style="wi'
+                          'dth: 55px; height: 55px; top: 122.5px; right: 8px;"'
+                          '></span>')
 ARROW_STYLE['arrow03'] = ('<span u="arrowleft" class="jssora03l" style="width:'
-                          '55px; height: 55px; top: 122.5px; left: 8px;"/><spa'
-                          'n u="arrowright" class="jssora03r" style="width: 55'
-                          'px; height: 55px; top: 122.5px; right: 8px;"/>')
+                          '55px; height: 55px; top: 122.5px; left: 8px;"></spa'
+                          'n><span u="arrowright" class="jssora03r" style="wid'
+                          'th: 55px; height: 55px; top: 122.5px; right: 8px;">'
+                          '</span>')
 ARROW_STYLE['arrow04'] = ('<span u="arrowleft" class="jssora04l" style="width:'
-                          '28px; height: 40px; top: 130px; left: 8px;"/><spa'
-                          'n u="arrowright" class="jssora04r" style="width: 28'
-                          'px; height: 40px; top: 130px; right: 8px;"/>')
+                          '28px; height: 40px; top: 130px; left: 8px;"></span>'
+                          '<span u="arrowright" class="jssora04r" style="width'
+                          ': 28px; height: 40px; top: 130px; right: 8px;"></sp'
+                          'an>')
 ARROW_STYLE['arrow05'] = ('<span u="arrowleft" class="jssora05l" style="width:'
-                          ' 40px; height: 40px; top: 130px; left: 8px;"/><span'
-                          ' u="arrowright" class="jssora05r" style="width: 40p'
-                          'x; height: 40px; top: 130px; right: 8px;"/>')
+                          ' 40px; height: 40px; top: 130px; left: 8px;"></span'
+                          '><span u="arrowright" class="jssora05r" style="widt'
+                          'h: 40px; height: 40px; top: 130px; right: 8px;"></s'
+                          'pan>')
 ARROW_STYLE['arrow06'] = ('<span u="arrowleft" class="jssora06l" style="width:'
-                          '45px; height: 45px; top: 127.5px; left: 8px;"/><spa'
-                          'n u="arrowright" class="jssora06r" style="width: 45'
-                          'px; height: 45px; top: 127.5px; right: 8px;"/>')
+                          '45px; height: 45px; top: 127.5px; left: 8px;"></spa'
+                          'n><span u="arrowright" class="jssora06r" style="wid'
+                          'th: 45px; height: 45px; top: 127.5px; right: 8px;">'
+                          '</span>')
 ARROW_STYLE['arrow07'] = ('<span u="arrowleft" class="jssora07l" style="width:'
-                          '50px; height: 50px; top: 125px;   left: 8px;"/><spa'
-                          'n u="arrowright" class="jssora07r" style="width: 50'
-                          'px; height: 50px; top: 125px;   right: 8px;"/>')
+                          '50px; height: 50px; top: 125px;   left: 8px;"></spa'
+                          'n><span u="arrowright" class="jssora07r" style="wid'
+                          'th: 50px; height: 50px; top: 125px;   right: 8px;">'
+                          '</span>')
 ARROW_STYLE['arrow08'] = ('<span u="arrowleft" class="jssorb08l" style="width:'
-                          '50px; height: 50px; top: 8px; left: 275px;"/><span '
-                          'u="arrowright" class="jssorb08r" style="width: 50px'
-                          '; height: 50px; bottom: 8px; left: 275px;"/>')
+                          '50px; height: 50px; top: 8px; left: 275px;"></span>'
+                          '<span u="arrowright" class="jssorb08r" style="width'
+                          ': 50px; height: 50px; bottom: 8px; left: 275px;"></'
+                          'span>')
 ARROW_STYLE['arrow09'] = ('<span u="arrowleft" class="jssora09l" style="width:'
-                          ' 50px; height: 50px; top: 125px; left: 8px;"/><span'
-                          ' u="arrowright" class="jssora09r" style="width: 50p'
-                          'x; height: 50px; top: 125px; right: 8px;"/>')
+                          ' 50px; height: 50px; top: 125px; left: 8px;"></span'
+                          '><span u="arrowright" class="jssora09r" style="widt'
+                          'h: 50px; height: 50px; top: 125px; right: 8px;"></s'
+                          'pan>')
 ARROW_STYLE['arrow10'] = ('<span u="arrowleft" class="jssora10l" style="width:'
-                          '28px; height: 40px; top: 130px; left: 8px;"/><span '
-                          'u="arrowright" class="jssora10r" style="width: 28px'
-                          '; height: 40px; top: 130px; right: 8px;"/>')
+                          '28px; height: 40px; top: 130px; left: 8px;"></span>'
+                          '<span u="arrowright" class="jssora10r" style="width'
+                          ': 28px; height: 40px; top: 130px; right: 8px;"></sp'
+                          'an>')
 ARROW_STYLE['arrow11'] = ('<span u="arrowleft" class="jssora11l" style="width:'
-                          ' 37px; height: 37px; top: 131.5px; left: 8px;"/><sp'
-                          'an u="arrowright" class="jssora11r" style="width: 3'
-                          '7px; height: 37px; top: 131.5px; right: 8px;"/>')
+                          ' 37px; height: 37px; top: 131.5px; left: 8px;"></sp'
+                          'an><span u="arrowright" class="jssora11r" style="wi'
+                          'dth: 37px; height: 37px; top: 131.5px; right: 8px;"'
+                          '></span>')
 ARROW_STYLE['arrow12'] = ('<span u="arrowleft" class="jssora12l" style="width:'
-                          ' 30px; height: 46px; top: 127px; left: 0px;"/><span'
-                          ' u="arrowright" class="jssora12r" style="width: 30p'
-                          'x; height: 46px; top: 127px; right: 0px;"/>')
+                          ' 30px; height: 46px; top: 127px; left: 0px;"></span'
+                          '><span u="arrowright" class="jssora12r" style="widt'
+                          'h: 30px; height: 46px; top: 127px; right: 0px;"></s'
+                          'pan>')
 ARROW_STYLE['arrow13'] = ('<span u="arrowleft" class="jssora13l" style="width:'
-                          ' 40px; height: 50px; top: 125px; left: 0px;"/><span'
-                          ' u="arrowright" class="jssora13r" style="width: 40p'
-                          'x; height: 50px; top: 125px; right: 0px;"/>')
+                          ' 40px; height: 50px; top: 125px; left: 0px;"></span'
+                          '><span u="arrowright" class="jssora13r" style="widt'
+                          'h: 40px; height: 50px; top: 125px; right: 0px;"></s'
+                          'pan>')
 ARROW_STYLE['arrow14'] = ('<span u="arrowleft" class="jssora14l" style="width:'
-                          ' 30px; height: 50px; top: 125px; left: 0px;"/><span'
-                          ' u="arrowright" class="jssora14r" style="width: 30p'
-                          'x; height: 50px; top: 125px; right: 0px;"/>')
+                          ' 30px; height: 50px; top: 125px; left: 0px;"></span'
+                          '><span u="arrowright" class="jssora14r" style="widt'
+                          'h: 30px; height: 50px; top: 125px; right: 0px;"></s'
+                          'pan>')
 ARROW_STYLE['arrow15'] = ('<span u="arrowleft" class="jssora15l" style="width:'
-                          ' 20px; height: 38px; top: 131px; left: 18px;"/><spa'
-                          'n u="arrowright" class="jssora15r" style="width: 20'
-                          'px; height: 38px; top: 131px; right: 18px;"/>')
+                          ' 20px; height: 38px; top: 131px; left: 18px;"></spa'
+                          'n><span u="arrowright" class="jssora15r" style="wid'
+                          'th: 20px; height: 38px; top: 131px; right: 18px;"><'
+                          '/span>')
 ARROW_STYLE['arrow16'] = ('<span u="arrowleft" class="jssora16l" style="width:'
-                          ' 22px; height: 36px; top: 132px; left: 18px;"/><spa'
-                          'n u="arrowright" class="jssora16r" style="width: 22'
-                          'px; height: 36px; top: 132px; right: 18px;"/>')
+                          ' 22px; height: 36px; top: 132px; left: 18px;"></spa'
+                          'n><span u="arrowright" class="jssora16r" style="wid'
+                          'th: 22px; height: 36px; top: 132px; right: 18px;"><'
+                          '/span>')
 ARROW_STYLE['arrow18'] = ('<span u="arrowleft" class="jssora18l" style="width:'
-                          ' 29px; height: 29px; top: 135.5px; left: 8px;"/><sp'
-                          'an u="arrowright" class="jssora18r" style="width: 2'
-                          '9px; height: 29px; top: 135.5px; right: 8px;"/>')
+                          ' 29px; height: 29px; top: 135.5px; left: 8px;"></sp'
+                          'an><span u="arrowright" class="jssora18r" style="wi'
+                          'dth: 29px; height: 29px; top: 135.5px; right: 8px;"'
+                          '></span>')
 ARROW_STYLE['arrow19'] = ('<span u="arrowleft" class="jssora19l" style="width:'
-                          ' 50px; height: 50px; top: 125px; left: 8px;"/><span'
-                          ' u="arrowright" class="jssora19r" style="width: 50p'
-                          'x; height: 50px; top: 125px; right: 8px;"/>')
+                          ' 50px; height: 50px; top: 125px; left: 8px;"></span'
+                          '><span u="arrowright" class="jssora19r" style="widt'
+                          'h: 50px; height: 50px; top: 125px; right: 8px;"></s'
+                          'pan>')
 ARROW_STYLE['arrow20'] = ('<span u="arrowleft" class="jssora20l" style="width:'
-                          ' 55px; height: 55px; top: 122.5px; left: 8px;"/><sp'
-                          'an u="arrowright" class="jssora20r" style="width: 5'
-                          '5px; height: 55px; top: 122.5px; right: 8px;"/>')
+                          ' 55px; height: 55px; top: 122.5px; left: 8px;"></sp'
+                          'an><span u="arrowright" class="jssora20r" style="wi'
+                          'dth: 55px; height: 55px; top: 122.5px; right: 8px;"'
+                          '></span>')
 ARROW_STYLE['arrow21'] = ('<span u="arrowleft" class="jssora21l" style="width:'
-                          ' 55px; height: 55px; top: 122.5px; left: 8px;"/><sp'
-                          'an u="arrowright" class="jssora21r" style="width: 5'
-                          '5px; height: 55px; top: 122.5px; right: 8px;"/>')
+                          ' 55px; height: 55px; top: 122.5px; left: 8px;"></sp'
+                          'an><span u="arrowright" class="jssora21r" style="wi'
+                          'dth: 55px; height: 55px; top: 122.5px; right: 8px;"'
+                          '></span>')
 
 BULLET_STYLE = {}
 BULLET_STYLE['bullet01'] = '<div u="navigator" class="jssorb01" style="position:absolute; bottom:16px; right:10px;"><div u="prototype" style="position:absolute; width:12px; height:12px;"/></div>'
