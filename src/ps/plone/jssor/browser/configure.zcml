@@ -8,7 +8,7 @@
     <include package="z3c.jbot" file="meta.zcml" />
     <browser:jbot
         directory="overrides"
-        layer="ps.plone.jssor.interfaces.IPsPloneJssorLayer"
+        layer="ps.plone.jssor.browser.interfaces.IJssorViewlets"
         />
 
     <!-- Publish static files -->
