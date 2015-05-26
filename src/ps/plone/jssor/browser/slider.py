@@ -1805,119 +1805,117 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
 
     def __BulletPointNavigatorOptions(self, data):
         """returns the BulletPoint Navi Options or empty string"""
-        BPN = data.get('FLS_BulletNavigator', True)
-        if BPN is True:
+        bpn = data.get('FLS_BulletNavigator', True)
+        if bpn is True:
             """Build BulletPoint Config together"""
-            BPN_options = "$Class: $JssorBulletNavigator$, "
-            BPN_options += "$ChanceToShow: %s, " % (data.get('BNO_ChanceToShow', 2))
-            BPN_options += "$AutoCenter: %s, " % (data.get('BNO_AutoCenter', 1))
-            BPN_options += "$Lanes: %s, " % (data.get('BNO_Lanes', 1))
-            BPN_options += "$Steps: %s, " % (data.get('BNO_Steps', 1))
-            BPN_options += "$Orientation: %s, " % (data.get('BNO_Orientation', 1))
-            BPN_options += "$SpacingX: %s, " % (data.get('BNO_SpacingX', 0))
-            BPN_options += "$SpacingY: %s, " % (data.get('BNO_SpacingY', 0))
+            bpn_o = "$Class: $JssorBulletNavigator$, "
+            bpn_o += "$ChanceToShow: %s, " % (data.get('BNO_ChanceToShow', 2))
+            bpn_o += "$AutoCenter: %s, " % (data.get('BNO_AutoCenter', 1))
+            bpn_o += "$Lanes: %s, " % (data.get('BNO_Lanes', 1))
+            bpn_o += "$Steps: %s, " % (data.get('BNO_Steps', 1))
+            bpn_o += "$Orientation: %s, " % (data.get('BNO_Orientation', 1))
+            bpn_o += "$SpacingX: %s, " % (data.get('BNO_SpacingX', 0))
+            bpn_o += "$SpacingY: %s, " % (data.get('BNO_SpacingY', 0))
             # wrap the BulletNavigatorOptions
-            BPN_options = "$BulletNavigatorOptions: { " + BPN_options + "}, "
-            return BPN_options
+            bpn_o = "$BulletNavigatorOptions: { " + bpn_o + "}, "
+            return bpn_o
         else:
             return ''
 
     def __ArrowNavigatorOptions(self, data):
         """get string of arrow navigation options"""
 
-        AN_options = ''
-        AN = data.get('FLS_ArrowNavigator', True)
-        if AN is True:
+        an_o = ''
+        an = data.get('FLS_ArrowNavigator', True)
+        if an is True:
             # Build Arrow Navi Config together
-            AN_options += "$Class: %s, " % (data.get('AN_Class', '$JssorArrowNavigator$'))
-            AN_options += "$ChanceToShow: %s, " % (data.get('AN_ChanceToShow', 2))
-            AN_options += "$AutoCenter: %s, " % (data.get('AN_AutoCenter', 2))
-            AN_options += "$Steps: %s, " % (data.get('AN_Steps', 1))
+            an_o += "$Class: %s, " % (data.get('AN_Class', '$JssorArrowNavigator$'))
+            an_o += "$ChanceToShow: %s, " % (data.get('AN_ChanceToShow', 2))
+            an_o += "$AutoCenter: %s, " % (data.get('AN_AutoCenter', 2))
+            an_o += "$Steps: %s, " % (data.get('AN_Steps', 1))
             if data.get('AN_Scale', True):
-                AN_options += "$Scale: true "
+                an_o += "$Scale: true "
             else:
-                AN_options += "$Scale: false "
+                an_o += "$Scale: false "
             # wrap the ArrowNavigatorOptions
-            AN_options = "$ArrowNavigatorOptions: { " + AN_options + "}, "
+            an_o = "$ArrowNavigatorOptions: { " + an_o + "}, "
 
-            return AN_options
+            return an_o
         else:
             return ''
 
     def __ThumbnailNavigatorOptions(self, data):
         """get string of thumbnail navigation options"""
 
-        TN_options = ''
-        TN = data.get('FLS_ThumbnailNavigator', True)
-        if TN is True:
+        tn_o = ''
+        tn = data.get('FLS_ThumbnailNavigator', True)
+        if tn is True:
             # Build Thumbnail Config
-            TN_options += "$Class: %s, " % (data.get('TN_Class', '$JssorThumbnailNavigator$'))
-            TN_options += "$Loop: %s, " % (data.get('TNO_Loop', 1))
-            TN_options += "$ActionMode: %s, " % (data.get('TNO_ActionMode', 1))
-            TN_options += "$AutoCenter: %s, " % (data.get('TNO_AutoCenter', 2))
-            TN_options += "$Lanes: %s, " % (data.get('TNO_Lanes', 1))
-            TN_options += "$ChanceToShow: %s, " % (data.get('TNO_ChanceToShow', 2))
-            TN_options += "$SpacingX: %s, " % (data.get('TNO_SpacingX', 0))
-            TN_options += "$SpacingY: %s, " % (data.get('TNO_SpacingY', 0))
-            TN_options += "$DisplayPieces: %s," % (data.get('TNO_DisplayPieces', 1))
-            TN_options += "$Orientation: %s," % (data.get('TNO_Orientation', 1))
+            tn_o += "$Class: %s, " % (data.get('TN_Class', '$JssorThumbnailNavigator$'))
+            tn_o += "$Loop: %s, " % (data.get('TNO_Loop', 1))
+            tn_o += "$ActionMode: %s, " % (data.get('TNO_ActionMode', 1))
+            tn_o += "$AutoCenter: %s, " % (data.get('TNO_AutoCenter', 2))
+            tn_o += "$Lanes: %s, " % (data.get('TNO_Lanes', 1))
+            tn_o += "$ChanceToShow: %s, " % (data.get('TNO_ChanceToShow', 2))
+            tn_o += "$SpacingX: %s, " % (data.get('TNO_SpacingX', 0))
+            tn_o += "$SpacingY: %s, " % (data.get('TNO_SpacingY', 0))
+            tn_o += "$DisplayPieces: %s," % (data.get('TNO_DisplayPieces', 1))
+            tn_o += "$Orientation: %s," % (data.get('TNO_Orientation', 1))
             if data.get('TNO_ParkingPosition', 0) is not None:
-                TN_options += "$ParkingPosition: %s," % (data.get('TNO_ParkingPosition', 0))
+                tn_o += "$ParkingPosition: %s," % (data.get('TNO_ParkingPosition', 0))
 
             if data.get('TNO_Scale', True):
-                TN_options += "$Scale: true, "
+                tn_o += "$Scale: true, "
             else:
-                TN_options += "$Scale: false, "
+                tn_o += "$Scale: false, "
 
             if data.get('TNO_DisableDrag', False):
-                TN_options += "$DisableDrag: true, "
+                tn_o += "$DisableDrag: true, "
 
             # wrap the ThumbnailNavigatorOptions
-            TN_options = "$ThumbnailNavigatorOptions: { " + TN_options + "}, "
+            tn_o = "$ThumbnailNavigatorOptions: { " + tn_o + "}, "
 
-            return TN_options
+            return tn_o
         else:
             return ''
 
     def __SlideshowOptions(self, data):
         """get string of Slideshow options"""
 
-        SS_options = ''
-        SS = data.get('FLS_SlideShow', False)
+        ss_o = ''
+        ss = data.get('FLS_SlideShow', False)
 
-        if SS is True:
+        if ss is True:
             # Build BulletPoint Config together
-            SS_options = "$Class: %s, " % (data.get('SS_Class', '$JssorSlideshowRunner$'))
-            SS_options += "$Transitions: [%s], " % (data.get('SS_Transitions', '{$Duration:1000,$Cols:8,$Clip:1}'))
-            SS_options += "$TransitionsOrder: %s, " % (data.get('SS_TransitionsOrder', '1'))
+            ss_o = "$Class: %s, " % (data.get('SS_Class', '$JssorSlideshowRunner$'))
+            ss_o += "$Transitions: [%s], " % (data.get('SS_Transitions', '{$Duration:1000,$Cols:8,$Clip:1}'))
+            ss_o += "$TransitionsOrder: %s, " % (data.get('SS_TransitionsOrder', '1'))
 
             if data.get('SS_ShowLink', True):
-                SS_options += "$ShowLink: true "
+                ss_o += "$ShowLink: true "
             else:
-                SS_options += "$ShowLink: false "
+                ss_o += "$ShowLink: false "
 
             # wrap the SlideshowOptions
-            SS_options = "$SlideshowOptions: { " + SS_options + "}, "
+            ss_o = "$SlideshowOptions: { " + ss_o + "}, "
 
-        return SS_options
+        return ss_o
 
     def __CaptionSliderOptions(self, data):
         """get string of CaptionSlider options"""
+        cs_o = ''
+        cs = data.get('FLS_CaptionSlider', False)
 
-        CS_options = ''
-        CS = data.get('FLS_CaptionSlider', False)
-
-        if CS is True:
+        if cs is True:
             # Build Config together
-            CS_options = "$Class: %s, " % (data.get('CS_Class', '$JssorCaptionSlider$'))
-            CS_options += "$CaptionTransitions: [%s], " % (data.get('CS_CaptionTransitions', '{$Duration:900,x:0.6,$Easing:{$Left:$JssorEasing$.$EaseInOutSine},$Opacity:2}'))
-            CS_options += "$PlayInMode: %s, " % (data.get('CS_PlayInMode', '1'))
-            CS_options += "$PlayOutMode: %s, " % (data.get('CS_PlayOutMode', '1'))
-
+            cs_o = "$Class: %s, " % (data.get('CS_Class', '$JssorCaptionSlider$'))
+            cs_o += "$CaptionTransitions: [%s], " % (data.get('CS_CaptionTransitions', '{$Duration:900,x:0.6,$Easing:{$Left:$JssorEasing$.$EaseInOutSine},$Opacity:2}'))
+            cs_o += "$PlayInMode: %s, " % (data.get('CS_PlayInMode', '1'))
+            cs_o += "$PlayOutMode: %s, " % (data.get('CS_PlayOutMode', '1'))
             # wrap the CaptionSlider Options
-            CS_options = "$CaptionSliderOptions: { " + CS_options + "}, "
+            cs_o = "$CaptionSliderOptions: { " + cs_o + "}, "
 
-        return CS_options
+        return cs_o
 
     def __generateANTemplate(self, data):
         """generate the template for the arrows"""
@@ -1941,87 +1939,84 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
 
         bool_ap = data.get('FLS_autoplay', True)
         if bool_ap is True:
-            autoplay = "$AutoPlay: true, "
+            ap = "$AutoPlay: true, "
             # get the other AutoPlay options
-            autoplay += "$AutoPlaySteps: %s, " % (data.get('FLS_AutoPlaySteps', u'1'))
-            autoplay += "$AutoPlayInterval: %s, " % (data.get('FLS_AutoPlayInterval', u'6000'))
-            autoplay += "$PauseOnHover: %s, " % (data.get('FLS_PauseOnHover', u'3'))
+            ap += "$AutoPlaySteps: %s, " % (data.get('FLS_AutoPlaySteps', u'1'))
+            ap += "$AutoPlayInterval: %s, " % (data.get('FLS_AutoPlayInterval', u'6000'))
+            ap += "$PauseOnHover: %s, " % (data.get('FLS_PauseOnHover', u'3'))
 
         else:
-            autoplay = "$AutoPlay: false, "
+            ap = "$AutoPlay: false, "
         # general Slider behavior
-        sliderbehavior = "$SlideDuration: %s, " % (data.get('FLS_SlideDuration', u'500'))
-        sliderbehavior += "$FillMode: %s, " % (data.get('FLS_FillMode', u'4'))
-        sliderbehavior += "$Loop: %s, " % (data.get('FLS_Loop', u'1'))
-        sliderbehavior += "$DisplayPieces: %s, " % (data.get('FLS_DisplayPieces', u'1'))
+        sb = "$SlideDuration: %s, " % (data.get('FLS_SlideDuration', u'500'))
+        sb += "$FillMode: %s, " % (data.get('FLS_FillMode', u'4'))
+        sb += "$Loop: %s, " % (data.get('FLS_Loop', u'1'))
+        sb += "$DisplayPieces: %s, " % (data.get('FLS_DisplayPieces', u'1'))
         # "translate" python bool to JS code
         if data.get('FLS_ArrowKeyNavigation', True):
             akn = "true"
         else:
             akn = "false"
-        sliderbehavior += "$ArrowKeyNavigation: %s, " % (akn)
-        sliderbehavior += "$PlayOrientation: %s, " % (data.get('FLS_PlayOrientation', u'1'))
-        sliderbehavior += "$DragOrientation: %s, " % (data.get('FLS_DragOrientation', u'1'))
-        sliderbehavior += "$MinDragOffsetToSlide: %s, " % (data.get('FLS_MinDragOffsetToSlide', u'20'))
-        sliderbehavior += "$UISearchMode: %s, " % (data.get('FLS_UISearchMode', u'1'))
+        sb += "$ArrowKeyNavigation: %s, " % (akn)
+        sb += "$PlayOrientation: %s, " % (data.get('FLS_PlayOrientation', u'1'))
+        sb += "$DragOrientation: %s, " % (data.get('FLS_DragOrientation', u'1'))
+        sb += "$MinDragOffsetToSlide: %s, " % (data.get('FLS_MinDragOffsetToSlide', u'20'))
+        sb += "$UISearchMode: %s, " % (data.get('FLS_UISearchMode', u'1'))
 
         # slide options
-        slideoptions = ""
+        so = ""
         slideheight = data.get('FLS_SlideHeight', None)
         if slideheight is not None:
-            slideoptions += "$SlideHeight: %s, " % (slideheight)
+            so += "$SlideHeight: %s, " % (slideheight)
 
         slidewidth = data.get('FLS_SlideWidth', None)
         if slidewidth is not None:
-            slideoptions += "$SlideWidth: %s, " % (slidewidth)
+            so += "$SlideWidth: %s, " % (slidewidth)
 
         slidespacing = data.get('FLS_SlideSpacing', None)
         if slidespacing is not None:
-            slideoptions += "$SlideSpacing: %s, " % (slidespacing)
+            so += "$SlideSpacing: %s, " % (slidespacing)
 
         parkingposition = data.get('FLS_ParkingPosition', None)
         if parkingposition is not None:
-            slideoptions += "$ParkingPosition: %s, " % (parkingposition)
+            so += "$ParkingPosition: %s, " % (parkingposition)
 
-        slideoptions += "$StartIndex: %s, " % (data.get('FLS_StartIndex', u'0'))
+        so += "$StartIndex: %s, " % (data.get('FLS_StartIndex', u'0'))
 
         # BulletPoint Navigation
-        BPN = self.__BulletPointNavigatorOptions(data)
+        bpn = self.__BulletPointNavigatorOptions(data)
         # Arrow Navigator
-        AN = self.__ArrowNavigatorOptions(data)
+        an = self.__ArrowNavigatorOptions(data)
         # Slideshow Options
-        SS = self.__SlideshowOptions(data)
+        ss = self.__SlideshowOptions(data)
         # Caption Transitions
-        CT = self.__CaptionSliderOptions(data)
+        ct = self.__CaptionSliderOptions(data)
         # Thumbnail Options
-        TO = self.__ThumbnailNavigatorOptions(data)
+        to = self.__ThumbnailNavigatorOptions(data)
 
         # putting all options together
-        all_options = autoplay + sliderbehavior + slideoptions + BPN + AN + SS + CT + TO
+        all_options = ap + sb + so + bpn + an + ss + ct + to
         options = "var options={%s};" % (all_options)
         return options
 
     @property
     def __FLSInitCode(self):
         """return string with the initiation code"""
-        stage_dict = self.getStageNames
+        sd = self.getStageNames
 
-        if stage_dict is None:
+        if sd is None:
             return None
         else:
             script = "try{"
             # do the resizing
-            script += " resize2pixel('%s');" % (stage_dict['wrapper'])
-            script += " resize2pixel('%s');" % (stage_dict['slides'])
-            script += " resize2pixel('%s');" % (stage_dict['stageid'])
+            script += " resize2pixel('%s');" % (sd['wrapper'])
+            script += " resize2pixel('%s');" % (sd['slides'])
+            script += " resize2pixel('%s');" % (sd['stageid'])
 
             # define the slider
-            script += " var %s = new $JssorSlider$('%s', options);" % (stage_dict['js_name'], stage_dict['id'])
+            script += " var %s = new $JssorSlider$('%s', options);" % (sd['js_name'], sd['id'])
             # catch JS Errors
             script += " } catch(error){console.log(error);}"
-            # responsive script
-            r_script = '$(window).bind("resize", PSScaleSlider(%s));' % (stage_dict['js_name'])
-            r_script += '$(window).bind("orientationchange", PSScaleSlider(%s));' % (stage_dict['js_name'])
 
             return script
 
@@ -2037,11 +2032,12 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
                 data['AN_genericTemplate'] = self.__generateANTemplate(data)
                 data['BNO_genericTemplate'] = self.__generateBNTemplate(data)
 
-            except(Exception):
+            except Exception, e:
                 my_msg = ("There was a problem with the script generation. "
                           "Please check the Slider Settings if a text field"
                           " contains invalid content.")
                 self.context.plone_utils.addPortalMessage(my_msg, 'error')
+                print str(e)
 
             annotations = IAnnotations(self.context)
             key = self.getConfigurationKey
