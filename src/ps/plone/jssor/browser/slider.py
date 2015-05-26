@@ -616,11 +616,9 @@ class SliderViewlet(ViewletBase):
         """Do we want the load indicator image"""
         return self.Settings.get('FLS_loader', False)
 
-    """
     @property
     def isResponsive(self):
-      return self.Settings.get('FLS_responsiveSlider', False)
-    """
+        return self.Settings.get('FLS_responsiveSlider', False)
 
     @property
     def CaptionCSSClass(self):
@@ -1754,13 +1752,14 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
     def generatedSliderScript(self, data):
         """generates the SliderScript from the configuration"""
 
-        sliderOptions = self.__configuredOptions(data)
+        slider_options = self.__configuredOptions(data)
         initiate_code = self.__FLSInitCode
+        rs = self.__responsive_script
 
         # build the FLS Script
-        if sliderOptions is not None and initiate_code is not None:
-            genericScript = "<script type='text/javascript'>$(document).ready(function($) { %s %s });</script>" % (sliderOptions, initiate_code)
-            return genericScript
+        if slider_options is not None and initiate_code is not None:
+            generic_script = "<script type='text/javascript'>$(document).ready(function($) { %s %s %s});</script>" % (slider_options, initiate_code, rs)
+            return generic_script
         else:
             return None
 
@@ -2019,6 +2018,21 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
             script += " } catch(error){console.log(error);}"
 
             return script
+
+    @property
+    def __responsive_script(self):
+        """"return string with the code to make slide responsive"""
+        sd = self.getStageNames
+
+        if sd is None:
+            return None
+
+        script = 'js=%s; st="%s";' % (sd['js_name'], sd['stageid'])
+        script += '$(window).bind("load", PSScaleSlider(js, st));'
+        script += '$(window).bind("resize", PSScaleSlider(js, st));'
+        script += '$(window).bind("orientationchange", PSScaleSlider(js, st));'
+
+        return script
 
     @button.buttonAndHandler(_(u'Save'))
     def handle_save(self, action):
