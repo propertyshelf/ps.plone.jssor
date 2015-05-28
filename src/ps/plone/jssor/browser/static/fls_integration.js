@@ -24,27 +24,12 @@ function resize2pixel(element, mode){
 
 }
 
-function PSScaleSlider(obj) {
-    console.log('responsive Slider Rasta');
-    /*
-    console.log(obj);
-    var parentWidth = $('.ps_slider_wrapper').parent().width();
-    console.log(parentWidth);
-
-    
-
-    if (parentWidth){
-        try{
-            obj.$ScaleWidth(parentWidth);
-        }
-        catch(error){
-            console.log(error);
-        }
+function PSScaleSlider(obj, parent) {
+    //reset to 100% width of parent container
+    $(parent).css('width', '100%');
+    $(parent).css('height', 'auto');
+    var parentWidth = $(parent).width();
+    if (parentWidth) {
+        obj.$ScaleWidth(parentWidth);
     }
-    //else
-        //obj.setTimeout(PSScaleSlider(obj), 30);
-
-    $(window).bind("resize", PSScaleSlider(obj));
-    $(window).bind("orientationchange", PSScaleSlider(obj));
-    */
 }
