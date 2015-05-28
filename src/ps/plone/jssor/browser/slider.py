@@ -2027,11 +2027,10 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
         if sd is None:
             return None
 
-        script = 'js=%s; st="%s";' % (sd['js_name'], sd['stageid'])
-        script += '$(window).bind("load", PSScaleSlider(js, st));'
-        script += '$(window).bind("resize", PSScaleSlider(js, st));'
-        script += '$(window).bind("orientationchange", PSScaleSlider(js, st));'
-
+        script = 'js=%s; st="%s";' % (sd['js_name'], sd['wrapper'])
+        script += '$(window).resize(function() {PSScaleSlider(js, st);});'
+        script += '$(window).on("orientationchange",function(){PSScaleSlider(js, st);});'
+        script += '$(window).load(function(){PSScaleSlider(js, st);});'
         return script
 
     @button.buttonAndHandler(_(u'Save'))
@@ -2039,7 +2038,6 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
         data, errors = self.extractData()
         if not errors:
             # process data for setting templates
-
             # generic script
             try:
                 data['genericJS'] = self.generatedSliderScript(data)
