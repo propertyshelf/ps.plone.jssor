@@ -40,9 +40,17 @@
     float:left;
 }
 
-/*  */
+/*  Set standard style */
 .fls-slides{
     background-color:#000;
+}
+
+/* override possible defaults */
+.fls-slides img{
+    max-width:none;
+}
+#content .fls-slides .collection-item {
+    height: inherit !important;
 }
 
 /* Arrow Navigator Stylez */
@@ -579,7 +587,7 @@
 }
 .caption_stage.Box{
     width:30%;
-    min-width:100px;
+    min-width:150px;
     max-width: 100%;
 }
 .caption_stage.Column{
