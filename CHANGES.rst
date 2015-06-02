@@ -2,9 +2,8 @@ Changelog
 =========
 
 
-0.1 (unreleased)
+0.1 (2015-06-02)
 ----------------
 
-- Initial release.
-  [propertyshelf]
+- first release
 
