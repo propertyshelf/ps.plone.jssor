@@ -77,24 +77,26 @@
                             location_list python:location_raw.split(',');
                             location_length python:len(location_list)-1;
                             location python:location_list[0]+', '+location_list[location_length-1]+', '+location_list[location_length];
-                            isLongCaption view/isLongCaption;">
+                            isLongCaption view/isLongCaption;
+                            info string: dynamic INFO;">
                 <div class="fls_caption">
                   <div 
                     tal:attributes="class layout"
-                    tal:condition="python: layout=='layout01'">
+                    tal:condition="python: layout=='price_title_location_bed_bath'">
                     
                     <h3 class="highlight price" tal:content="listing/price/value"/>
-                    <div class="title" tal:content="listing/title/value"/>
-                    <div class="location" tal:content="location"/>
-                    <div class="bedbath">
-                      <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
-                      <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
+                    <div class="content">
+                      <div class="title" tal:content="listing/title/value"/>
+                        <div class="location" tal:content="location"/>
+                        <div class="bedbath">
+                          <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
+                          <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
+                        </div>
                     </div>
-
                   </div>
                   <div 
                     tal:attributes="class layout"
-                    tal:condition="python: layout=='layout02'">
+                    tal:condition="python: layout=='title_bath_bed_location_price'">
                     <div class="row01">
                       <div class="title" tal:content="listing/title/value"/>
                     </div>
@@ -108,42 +110,16 @@
                   </div>
                   <div 
                     tal:attributes="class layout"
-                    tal:condition="python: layout=='layout03'">
-                    <div class="short" tal:condition="not:isLongCaption">
+                    tal:condition="python: layout=='title_object-type_bath_bed_price'">
                       <span class="title" tal:content="listing/title/value" />
                       <span class="type icons-on" tal:content="listing/object_type/value"/>
                       <span class="beds icons-on"  tal:condition="bed" tal:content="bed_val" />
                       <span class="baths icons-on" tal:condition="bath" tal:content="bath_val"/>
-                      <span class="price" tal:content="listing/price/value"/>
-                     
-                    </div>
-                  <div class="long" tal:condition="isLongCaption">
-                    <h3 class="title" tal:content="listing/title/value" />
-                    <span class="location" tal:content="location"/>
-                    <div class="top-info">
-                      <div class="object_type"><span class="label" tal:content="listing/object_type/label" /> - <span class="value" tal:content="listing/object_type/value"/></div>
-                      <div class="beds_baths" tal:condition="bedbath"><span class="label" tal:content="listing/beds_baths/label" /> - <span class="value" tal:content="listing/beds_baths/value"/></div>
-                    </div>
-                    <div class="bottom-info">
-                      <div class="location_type">
-                        <span class="label" tal:content="listing/location_type/label" /> - 
-                        <span class="value" tal:content="listing/location_type/value"/>
-                      </div>
-                      <div class="view_type">
-                        <span class="label" tal:content="listing/view_type/label" /> - 
-                        <span class="value" tal:content="listing/view_type/value"/>
-                      </div>
-                      <div class="lot_size">
-                        <span class="label" tal:content="listing/lot_size/label" /> - 
-                        <span class="value" tal:content="listing/lot_size/value"/>
-                      </div>
-                    </div>
-                  </div>
-                   
+                      <span class="price" tal:content="listing/price/value"/>  
                   </div>
                   <div 
                     tal:attributes="class layout"
-                    tal:condition="python: layout=='layout04'">
+                    tal:condition="python: layout=='location_object-type_price'">
                     <div class="location" tal:content="location"/>
                     <div class="type icons-on" tal:content="listing/object_type/value"/>
                     <div class="price" tal:content="listing/price/value"/>
@@ -154,6 +130,113 @@
                     </p>
                       
                   </div>
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='price'">
+                    <div class="price" tal:define="price listing/price/value">
+                      <h2 tal:content="price"></h2>
+                    </div>
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='price_property-type'">
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price"></h3>
+                    </div>
+                    <div class="property_type" tal:content="listing/object_type/value" />
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='location_price'">
+                    <div class="location">
+                      <h2 tal:content="location"></h2>
+                    </div>
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price"></h3>
+                    </div>
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='title_price'">
+                    <div class="title">
+                      <h2 tal:content="listing/title/value"></h2>
+                    </div>
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price"></h3>
+                    </div>
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='title_location_price'">
+                    <div class="title">
+                      <h2 tal:content="listing/title/value"/>
+                    </div>
+                    <div class="location" tal:content="location"></div>
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price" ></h3>
+                    </div>
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='title_location_info_price'">
+                    <div class="title">
+                      <h2 tal:content="listing/title/value"/>
+                    </div>
+                    <div class="location" tal:content="location"></div>
+                    <div class="info" tal:content="info"></div>
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price" ></h3>
+                    </div>
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='location_info_price'">
+                    <div class="location">
+                      <h2 tal:content="location"></h2>
+                    </div>
+                    <div class="info" tal:content="info" tal:condition="info" />
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price"></h3>
+                    </div>
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='title_location_property-type_info_price'">
+                    <div class="title">
+                      <h2 tal:content="listing/title/value"/>
+                    </div>
+                    <div class="location">
+                      <h3 tal:content="location"></h3>
+                    </div>
+                    <div class="property_type" tal:content="listing/object_type/value" />
+                    <div class="info" tal:content="info" tal:condition="info" />
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price"></h3>
+                    </div>
+                  </div>
+
+                  <div 
+                    tal:attributes="class layout"
+                    tal:condition="python: layout=='location_property-type_info_price'">
+                    <div class="location">
+                      <h2 tal:content="location"></h2>
+                    </div>
+                    <div class="property_type" tal:define="pt listing/object_type/value">
+                      <h3 tal:content="pt"></h3>
+                    </div>
+                    <div class="info" tal:content="info" tal:condition="info" />
+                    <div class="price" tal:define="price listing/price/value">
+                      <h3 tal:content="price"></h3>
+                    </div>
+                  </div>
+
                 </div>
               </div>
 
