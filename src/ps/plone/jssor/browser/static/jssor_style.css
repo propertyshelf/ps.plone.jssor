@@ -696,15 +696,15 @@
 /* Given Caption Layouts */
 .caption_stage h3.highlight{
     background-color: #758f00;
-    font-size:2em;
-    padding:0 8%;
-    width:84%;
+    font-size:1.5em;
+    padding:0.8em;
+    line-height:1.2em;
 }
 
 .fls_caption > div,
 .fls_caption .row01,
 .fls_caption .row02,
-.caption_stage.Column .layout02 {
+.caption_stage.Column .title_bath_bed_location_price {
     background:rgb(4,19,48);
     background: transparent\9;
     background:rgba(4,19,48,0.8);
@@ -716,29 +716,7 @@
     
 }
 /* Layout 01*/
-.layout01{
-    padding-bottom:1em;
-}
-.caption_stage .layout01 h3,
-.caption_stage .layout01 a{
-  color:#fff;
-  margin-top:0;
-}
-
-.caption_stage .layout01 div{
-    width:84%;
-    padding-left:8%;
-    padding-right:8%;
-    margin-bottom:0.8em;
-}
-.caption_stage.Row .layout01 div,
-.caption_stage.Row .layout01 h3.highlight{
-    width:92%;
-    padding-left:4%;
-    padding-right:4%;
-}
-
-.caption_stage .layout01:nth-child(n) {
+.caption_stage .price_title_location_bed_bath:nth-child(n) {
     filter: none;
 }
 
@@ -750,29 +728,29 @@
 
 }
 /* Layout 02 */
-.fls_caption .layout02,
-.caption_stage.Column .layout02 .row01,
-.caption_stage.Column .layout02 .row02{
+.fls_caption .title_bath_bed_location_price,
+.caption_stage.Column .title_bath_bed_location_price .row01,
+.caption_stage.Column .title_bath_bed_location_price .row02{
     background:none;
 }
-.caption_stage .layout02 .baths.icons-on,
-.caption_stage .layout02 .beds.icons-on{
+.caption_stage .title_bath_bed_location_price .baths.icons-on,
+.caption_stage .title_bath_bed_location_price .beds.icons-on{
     width:30px;
     float:left;
 
 }
-.fls_caption .layout02 .row02 span{
+.fls_caption .title_bath_bed_location_price .row02 span{
     float:left;
 }
-.caption_stage .layout02 .v_devider{
+.caption_stage .title_bath_bed_location_price .v_devider{
     margin-right:1em;
 }
 
-.caption_stage.Column .layout02 .row02{
+.caption_stage.Column .title_bath_bed_location_price .row02{
     padding-top:4em;
 
 }
-.caption_stage.Column .layout02 .price{
+.caption_stage.Column .title_bath_bed_location_price .price{
     position:absolute;
     top:0;
     right:0;
@@ -786,17 +764,17 @@
     font-size:1.5em;
 }
 
-.caption_stage.Box .layout02 .row02{
-    padding-bottom: 3.5em
+.caption_stage.Box .title_bath_bed_location_price .row02{
+    padding-bottom: 4em
 }
-.caption_stage.Box .layout02 .highlight{
+.caption_stage.Box .title_bath_bed_location_price .highlight{
     position:absolute; 
     left:0;
     right:0;
     bottom:0;
     padding: 0.5em 1em;
 }
-.caption_stage.Row .layout02 .highlight{
+.caption_stage.Row .title_bath_bed_location_price .highlight{
     position:absolute;
     right:0;
     bottom:0;
@@ -804,8 +782,8 @@
     top:-1px;
 }
 
-.caption_stage.Box .layout02 .row02 .v_devider,
-.caption_stage.Column .layout02 .row02 .v_devider{
+.caption_stage.Box .title_bath_bed_location_price .row02 .v_devider,
+.caption_stage.Column .title_bath_bed_location_price .row02 .v_devider{
     clear:both;
     float:none;
     display:block;
@@ -831,47 +809,36 @@
 
 
 /* Caption Layout 03 */
-.caption_stage.Box .layout03,
-.caption_stage.Box .layout04{
+.caption_stage.Box .location_object-type_price{
     padding:4% 6%;
-    
 }
 
-.caption_stage .layout03 .title{
+.caption_stage .title_object-type_bath_bed_price .title{
     display:block;
     color:#758f00;
     font-size:1.3em;
     line-height:1.15em;
 }
-/* Box */
-.caption_stage.Box .layout03 .price{
-    position:absolute;
+
+.caption_stage .price{
     font-size:1.4em;
-    right:8%;
-    bottom:10%;
 }
-.caption_stage.Box .layout03 .type.icons-on{
+.caption_stage .title_object-type_bath_bed_price > span{
+    margin-bottom:0.5em;
+}
+.caption_stage.Box .title_object-type_bath_bed_price .type.icons-on{
   display:block;
   margin: 0.3em 0;
 }
-/* Row */
-.caption_stage.Row .layout03 .price{
-    position: absolute;
-    right:5%;
-}
+
 /* short caption */
-.caption_stage.Row .layout03 .short{
+.caption_stage.Row .title_object-type_bath_bed_price .short{
     overflow:hidden;
     height:auto;
     padding:0.8em 1em;
 }
 
-.caption_stage.Row .layout03 .title{
-    display:inline-block;
-    width:65%;
-}
-
-.caption_stage.Column .layout03 {
+.caption_stage.Column .title_object-type_bath_bed_price {
     padding:0.8em 1em;
 }
 .caption_stage .label{
@@ -880,45 +847,59 @@
     color:inherit;
     font-size:1em;
 }
-.caption_stage .layout03 .value{
+.caption_stage .title_object-type_bath_bed_price .value{
     color:#fff;
     font-weight:bold;
 }
-.caption_stage.Column .layout03 .location{
+.caption_stage.Column .title_object-type_bath_bed_price .location{
     font-style:italic;
     font-size: 0.86em;
 }
-.caption_stage .layout03 .top-info,
-.caption_stage .layout03 .bottom-info{
+.caption_stage .title_object-type_bath_bed_price .top-info,
+.caption_stage .title_object-type_bath_bed_price .bottom-info{
     margin-top:1.5em;
 }
 
-/* layout04 */
-.caption_stage .layout04{
-    padding:1em;
-}
-.caption_stage .layout04 .location,
-.caption_stage.Column .layout04 .price{
+/* location_object-type_price */
+.caption_stage .location_object-type_price .location,
+.caption_stage.Column .location_object-type_price .price{
     font-style:italic;
     border-bottom: 1px dotted #fff;
     padding-bottom:0.5em;
     margin-bottom:0.5em;
 }
-.caption_stage .layout04 .type{
-    padding-bottom:0.5em;
-}
 
-.caption_stage .layout04 .title,
-.caption_stage .layout04 p{
+.caption_stage .location_object-type_price .title,
+.caption_stage .location_object-type_price p{
     color:#ccc;
 }
 
-.caption_stage.Row .layout04 .price{
+.caption_stage.Row .location_object-type_price .price{
     position:absolute;
     right:1em;
-    top:1em;
+    bottom:0;
 }
 
+/* new Data Layouts */
+.fls_caption div.content{
+    padding:1em;
+}
+
+.fls_caption div.content > div{
+    margin-bottom:1em;
+}
+
+.fls_caption .price h2,
+.fls_caption .price h3{
+    color:#fff;
+    font-weight:normal;
+}
+.fls_caption .title{
+    margin-bottom:0.5em;
+}
+.fls_caption .location{
+    font-style: italic;
+}
 /* Slider Loading Screen */
 .loader_image{
     position:absolute;

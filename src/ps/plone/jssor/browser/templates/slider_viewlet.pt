@@ -101,15 +101,18 @@
                       <div class="title" tal:content="listing/title/value"/>
                     </div>
                     <div class="row02">
-                      <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
-                      <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
-                      <span class="v_devider"/>
-                      <span class="location" tal:content="location"/>
-                      <span class="highlight price" tal:content="listing/price/value"/>
+                      <div class="bath_bed" tal:condition="python: bath_val or bed_val">
+                        <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
+                        <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
+                        <span class="v_devider"/>
+                      </div>
+                      
+                      <div class="location" tal:content="location"/>
+                      <div class="highlight price" tal:content="listing/price/value"/>
                     </div>
                   </div>
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='title_object-type_bath_bed_price'">
                       <span class="title" tal:content="listing/title/value" />
                       <span class="type icons-on" tal:content="listing/object_type/value"/>
@@ -118,7 +121,7 @@
                       <span class="price" tal:content="listing/price/value"/>  
                   </div>
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='location_object-type_price'">
                     <div class="location" tal:content="location"/>
                     <div class="type icons-on" tal:content="listing/object_type/value"/>
@@ -131,7 +134,7 @@
                       
                   </div>
                   <div 
-                    tal:attributes="class layout"
+                    ttal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='price'">
                     <div class="price" tal:define="price listing/price/value">
                       <h2 tal:content="price"></h2>
@@ -139,7 +142,7 @@
                   </div>
 
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='price_property-type'">
                     <div class="price" tal:define="price listing/price/value">
                       <h3 tal:content="price"></h3>
@@ -147,8 +150,7 @@
                     <div class="property_type" tal:content="listing/object_type/value" />
                   </div>
 
-                  <div 
-                    tal:attributes="class layout"
+                  <div tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='location_price'">
                     <div class="location">
                       <h2 tal:content="location"></h2>
@@ -159,7 +161,7 @@
                   </div>
 
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='title_price'">
                     <div class="title">
                       <h2 tal:content="listing/title/value"></h2>
@@ -170,7 +172,7 @@
                   </div>
 
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='title_location_price'">
                     <div class="title">
                       <h2 tal:content="listing/title/value"/>
@@ -182,7 +184,7 @@
                   </div>
 
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='title_location_info_price'">
                     <div class="title">
                       <h2 tal:content="listing/title/value"/>
@@ -195,7 +197,7 @@
                   </div>
 
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='location_info_price'">
                     <div class="location">
                       <h2 tal:content="location"></h2>
@@ -207,7 +209,7 @@
                   </div>
 
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='title_location_property-type_info_price'">
                     <div class="title">
                       <h2 tal:content="listing/title/value"/>
@@ -223,7 +225,7 @@
                   </div>
 
                   <div 
-                    tal:attributes="class layout"
+                    tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='location_property-type_info_price'">
                     <div class="location">
                       <h2 tal:content="location"></h2>
