@@ -902,6 +902,26 @@
     font-size:22px;
     font-weight:normal;
 }
+
+/* Data Layout */
+.fls_caption div.location_price .location{
+    margin-bottom:0;
+}
+.Column .fls_caption h3.highlight.location_price{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.Row .fls_caption h3.highlight.location_price{
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:12px;
+}
+.Box .fls_caption h3.highlight.location_price{
+    padding:12px;
+}
 /* Slider Loading Screen */
 .loader_image{
     position:absolute;
