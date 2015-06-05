@@ -694,12 +694,6 @@
 
 
 /* Given Caption Layouts */
-.caption_stage h3.highlight{
-    background-color: #758f00;
-    font-size:1.5em;
-    padding:0.8em;
-    line-height:1.2em;
-}
 
 .fls_caption > div,
 .fls_caption .row01,
@@ -820,9 +814,6 @@
     line-height:1.15em;
 }
 
-.caption_stage .price{
-    font-size:1.4em;
-}
 .caption_stage .title_object-type_bath_bed_price > span{
     margin-bottom:0.5em;
 }
@@ -862,7 +853,8 @@
 
 /* location_object-type_price */
 .caption_stage .location_object-type_price .location,
-.caption_stage.Column .location_object-type_price .price{
+.caption_stage.Column .location_object-type_price .price,
+.price_property-type .price{
     font-style:italic;
     border-bottom: 1px dotted #fff;
     padding-bottom:0.5em;
@@ -899,6 +891,16 @@
 }
 .fls_caption .location{
     font-style: italic;
+}
+.fls_caption h3.highlight{
+    background-color: #758f00;
+    padding:0.8em;
+    line-height:1.2em;
+}
+.fls_caption .price,
+.fls_caption h3.highlight{
+    font-size:22px;
+    font-weight:normal;
 }
 /* Slider Loading Screen */
 .loader_image{

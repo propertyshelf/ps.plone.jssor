@@ -134,11 +134,9 @@
                       
                   </div>
                   <div 
-                    ttal:attributes="class string:${layout} content"
+                    tal:attributes="class string:${layout}"
                     tal:condition="python: layout=='price'">
-                    <div class="price" tal:define="price listing/price/value">
-                      <h2 tal:content="price"></h2>
-                    </div>
+                      <h3 tal:content="listing/price/value" class="highlight"/>
                   </div>
 
                   <div 
