@@ -594,6 +594,7 @@
     width:25%;
     height:100%;
     overflow: hidden;
+    min-width:140px;
 }
 .caption_stage.Column .fls_caption{
     height:100%;
@@ -882,7 +883,9 @@
 }
 
 .fls_caption .price h2,
-.fls_caption .price h3{
+.fls_caption .price h3,
+.fls_caption h2,
+.fls_caption h3{
     color:#fff;
     font-weight:normal;
 }
@@ -913,13 +916,26 @@
     left:0;
     right:0;
 }
-.Row .fls_caption h3.highlight.location_price{
+.Row .fls_caption h3.highlight.location_price
+{
     position:absolute;
     bottom:0;
     right:0;
-    padding:12px;
 }
-.Box .fls_caption h3.highlight.location_price{
+.Row .fls_caption h3.highlight.title_price{
+    position:absolute;
+    top:1em;
+    right:0;
+}
+.fls_caption div.content.title_price div.title{
+    margin:0;
+    max-width:75%;
+}
+
+.Box .fls_caption h3.highlight.location_price,
+.Row .fls_caption h3.highlight.title_price,
+.Row .fls_caption h3.highlight.location_price
+{
     padding:12px;
 }
 /* Slider Loading Screen */
