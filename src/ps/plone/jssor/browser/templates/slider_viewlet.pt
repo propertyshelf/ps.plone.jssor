@@ -210,31 +210,29 @@
                     tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='title_location_property-type_info_price'">
                     <div class="title">
-                      <h2 tal:content="listing/title/value"/>
+                      <h3 tal:content="listing/title/value"/>
                     </div>
-                    <div class="location">
-                      <h3 tal:content="location"></h3>
-                    </div>
+                    <div class="location" tal:content="location" />
                     <div class="property_type" tal:content="listing/object_type/value" />
-                    <div class="info" tal:content="info" tal:condition="info" />
-                    <div class="price">
-                      <h3 tal:content="price"></h3>
+                    <div class="info" tal:content="info" tal:condition="python: True if not type=='r' else False" />
+                    <div class="bedbath" tal:condition="python: True if type=='r' else False">
+                          <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
+                          <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
                     </div>
+                    <h3 class="price" tal:content="price" />
                   </div>
 
                   <div 
                     tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='location_property-type_info_price'">
-                    <div class="location">
-                      <h2 tal:content="location"></h2>
+                    <h3 class="location" tal:content="location" />
+                    <div class="property_type" tal:content="listing/object_type/value" />
+                    <div class="info" tal:content="info" tal:condition="python: True if not type=='r' else False" />
+                    <div class="bedbath" tal:condition="python: True if type=='r' else False">
+                          <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
+                          <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
                     </div>
-                    <div class="property_type" tal:define="pt listing/object_type/value">
-                      <h3 tal:content="pt"></h3>
-                    </div>
-                    <div class="info" tal:content="info" tal:condition="info" />
-                    <div class="price">
-                      <h3 tal:content="price"></h3>
-                    </div>
+                    <h3 class="price" tal:content="price" />
                   </div>
 
                 </div>
