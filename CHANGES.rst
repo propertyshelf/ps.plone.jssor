@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.2.1 (2015-06-23)
+------------------
+
+- optimize MANIFEST.in to work with Windows OS
+
+
 0.2 (2015-06-08)
 ----------------
 
