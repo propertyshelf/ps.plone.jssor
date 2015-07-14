@@ -11,6 +11,11 @@
     border:0 none transparent;
 }
 /* Slider captions */
+.fls_caption h2,
+.fls_caption h3,
+.fls_caption h4{
+    margin:0;
+}
 .fls-content{
     max-height:20%;
     overflow:auto;
