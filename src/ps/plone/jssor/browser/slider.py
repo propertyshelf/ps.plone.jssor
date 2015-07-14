@@ -634,7 +634,7 @@ class SliderViewlet(ViewletBase):
 
     @property
     def CaptionDataLayout(self):
-        return self.Settings.get('CS_DataType', 'location_object-type_price')
+        return self.Settings.get('CS_DataType', 'location_property-type_info_price')
 
     @property
     def isLongCaption(self):
@@ -1424,7 +1424,7 @@ class ICaptionSlider(Interface):
     )
 
     CS_DataType = schema.Choice(
-        default=u'title_location_info_price',
+        default=u'location_property-type_info_price',
         required=True,
         title=_(
             u"label_CS_DataType",
