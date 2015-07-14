@@ -235,6 +235,25 @@
                     <h3 class="price" tal:content="price" />
                   </div>
 
+                  <div 
+                    tal:attributes="class string:${layout} content"
+                    tal:condition="python: layout=='price_bed_bath'">
+                    <span class="price" tal:content="price" ></span>
+                    <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
+                    <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
+                  </div>
+
+                  <div 
+                    tal:attributes="class string:${layout} content"
+                    tal:condition="python: layout=='property-type_bed_bath_price'">
+                    <div class="first_line">
+                      <span class="property_type" tal:content="listing/object_type/value" ></span>
+                      <span class="baths icons-on" tal:condition="bath"><span tal:content="bath_val"/></span>
+                      <span class="beds icons-on"  tal:condition="bed"><span tal:content="bed_val"/></span>
+                    </div>
+                    <h3 class="price second_line" tal:content="price" />
+                  </div>
+
                 </div>
               </div>
 
