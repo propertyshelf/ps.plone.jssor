@@ -8,8 +8,7 @@
 }
 /* Slider appearance */
 .fls-wrapper{
-    border:1px solid #ccc;
-    /* background-color:#000; */
+    border:0 none transparent;
 }
 /* Slider captions */
 .fls-content{
@@ -42,7 +41,7 @@
 
 /*  Set standard style */
 .fls-slides{
-    background-color:#000;
+    background-color:transparent;
 }
 
 /* override possible defaults */
@@ -673,15 +672,15 @@
 
 .caption_stage .baths.icons-on{
   display:inline-block;
-  padding-left:2em;
-  padding-right:1em;
+  padding-left:1.5em;
+  padding-right:0.6em;
 
   background:url(bathrooms.png) no-repeat scroll 0 -2px;
 }
 .caption_stage .beds.icons-on{
   display:inline-block;
   padding-left:2em;
-  padding-right:1em;
+  padding-right:0.6em;
   background:url(bedrooms.png) no-repeat;
   background-position: 0 4px;
 }
@@ -754,7 +753,6 @@
 }
 
 .caption_stage .highlight{
-    background-color: #758f00;
     color:#fff;
     font-size:1.5em;
 }
@@ -876,6 +874,7 @@
 /* new Data Layouts */
 .fls_caption div.content{
     padding:1em;
+    padding-top:0.5em;
 }
 
 .fls_caption div.content > div{
@@ -896,7 +895,6 @@
     font-style: italic;
 }
 .fls_caption h3.highlight{
-    background-color: #758f00;
     padding:0.8em;
     line-height:1.2em;
 }
@@ -932,6 +930,16 @@
     max-width:75%;
 }
 
+.fls_caption .property-type_bed_bath_price .property_type{
+    margin-right:1em;
+}
+
+.fls_caption .property-type_bed_bath_price h3.second_line{
+    position:absolute;
+    right:1em;
+    bottom:2px;
+}
+
 .Box .fls_caption h3.highlight.location_price,
 .Row .fls_caption h3.highlight.title_price,
 .Row .fls_caption h3.highlight.location_price
@@ -954,7 +962,7 @@
     opacity:0.7;
     position:absolute;
     display:block;
-    background-color:#000;
+    background-color:#bbb;
     top:0;
     left:0;
     width:100%;
