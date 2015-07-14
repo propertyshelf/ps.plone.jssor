@@ -1424,24 +1424,26 @@ class ICaptionSlider(Interface):
     )
 
     CS_DataType = schema.Choice(
-        default=u"location_object-type_price",
+        default=u'title_location_info_price',
         required=True,
         title=_(
             u"label_CS_DataType",
             default=u"Caption Data Layout",
         ),
-        values=['price_title_location_bed_bath',
-                'title_bath_bed_location_price',
-                'title_object-type_bath_bed_price',
-                'location_object-type_price',
-                'price',
+        values=['price',
+                'price_bed_bath',
                 'price_property-type',
-                'location_price',
+                'price_title_location_bed_bath',
+                'property-type_bed_bath_price',
                 'title_price',
+                'title_bath_bed_location_price',
                 'title_location_price',
                 'title_location_info_price',
-                'location_info_price',
+                'title_object-type_bath_bed_price',
                 'title_location_property-type_info_price',
+                'location_price',
+                'location_object-type_price',
+                'location_info_price',
                 'location_property-type_info_price']
     )
 
