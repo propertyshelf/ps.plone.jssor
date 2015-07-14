@@ -625,7 +625,7 @@ class SliderViewlet(ViewletBase):
         """uses current settings to generate the correct caption classes"""
         settings = self.Settings
         stagetype = settings.get('CS_StageType', 'Box')
-        position = settings.get('CS_StagePosition', 'bottom-left')
+        position = settings.get('CS_StagePosition', 'bottom-right')
         base = 'caption_stage '
         if settings.get('CS_Offset', True):
             base = base + 'offset '
@@ -1119,7 +1119,7 @@ class IArrowNavigator(Interface):
     )
 
     AN_ArrowStyle = schema.Choice(
-        default=u'arrow01',
+        default=u'arrow10',
         description=_(u'Choose a style for the navigation arrows'),
         required=True,
         title=_(u'Arrow Style'),
@@ -1414,7 +1414,7 @@ class ICaptionSlider(Interface):
     )
 
     CS_StagePosition = schema.Choice(
-        default=u"top-left",
+        default=u"bottom-right",
         required=True,
         title=_(
             u"label_CS_StageType",
@@ -1932,7 +1932,7 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
 
     def __generateANTemplate(self, data):
         """generate the template for the arrows"""
-        return ARROW_STYLE[data.get('AN_ArrowStyle', 'arrow01')]
+        return ARROW_STYLE[data.get('AN_ArrowStyle', 'arrow10')]
 
     def __generateBNTemplate(self, data):
         """generate the template for the bullet points"""
