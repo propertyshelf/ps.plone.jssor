@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.3 (unreleased)
+------------------
+
+- add new data layouts for Listing Captions (Price + Bed + Bath , Property type + Bed + Bath + Price)
+- update default css, remove all dark and strong colors
+- set new standard setting for new Sliders
+
 0.2.1 (2015-06-23)
 ------------------
 
