@@ -156,20 +156,19 @@
                   <div tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='location_price'">
                     <div class="location" tal:content="location" />
+                    <h3  class="location_price highlight price" tal:content="price" />
                   </div>
-                  <h3 tal:condition="python: layout=='location_price'"
-                    class="location_price highlight price" tal:content="price" />
+                  
 
                   <div 
                     tal:attributes="class string:${layout} content"
                     tal:condition="python: layout=='title_price'">
                     <div class="title">
-                      <h3 tal:content="listing/title/value"></h3>
+                      <div tal:content="listing/title/value"></div>
+                      <h3 class="title_price highlight price" tal:content="price" />
                     </div>
                   </div>
-                  <h3 tal:condition="python: layout=='title_price'"
-                    class="title_price highlight price" tal:content="price" />
-
+                  
 
                   <div 
                     tal:attributes="class string:${layout} content"

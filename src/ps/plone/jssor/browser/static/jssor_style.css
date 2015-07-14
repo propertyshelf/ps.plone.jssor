@@ -758,7 +758,7 @@
 }
 
 .caption_stage.Box .title_bath_bed_location_price .row02{
-    padding-bottom: 4em
+    padding-bottom: 3em
 }
 .caption_stage.Box .title_bath_bed_location_price .highlight{
     position:absolute; 
@@ -808,7 +808,6 @@
 
 .caption_stage .title_object-type_bath_bed_price .title{
     display:block;
-    color:#758f00;
     font-size:1.3em;
     line-height:1.15em;
 }
@@ -818,7 +817,7 @@
 }
 .caption_stage.Box .title_object-type_bath_bed_price .type.icons-on{
   display:block;
-  margin: 0.3em 0;
+  margin: 0.5em 0;
 }
 
 /* short caption */
@@ -902,6 +901,7 @@
 .fls_caption h3.highlight{
     font-size:22px;
     font-weight:normal;
+    text-align:right;
 }
 
 /* Data Layout */
@@ -927,7 +927,7 @@
 }
 .fls_caption div.content.title_price div.title{
     margin:0;
-    max-width:75%;
+
 }
 
 .fls_caption .property-type_bed_bath_price .property_type{
@@ -940,12 +940,69 @@
     bottom:2px;
 }
 
+.fls_caption .price_bed_bath .price{
+    margin-right:1em;
+    position:absolute;
+    top:0.4em;
+    left:1em;
+}
+
+.fls_caption .price_bed_bath.content{
+    text-align:right;
+    padding-top:12px;
+}
+.fls_caption .price_property-type .price{
+    text-align: left;
+    border-bottom:0 none transparent;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+.fls_caption .price_property-type .property_type{
+    position:absolute;
+    right:1em;
+    top:1.2em;
+}
+.fls_caption .price_title_location_bed_bath h3.highlight{
+    text-align:left;
+    padding-bottom:0.3em;
+}
+
+.fls_caption .title_price h3.price{
+    padding:0.5em 0.8em 0.2em;
+}
+
+.fls_caption .title_object-type_bath_bed_price .price
+{
+    position:absolute;
+    right:0.8em;
+    bottom:5px;
+}
+.fls_caption .title_location_property-type_info_price .price
+{
+    position:absolute;
+    right:0.8em;
+    bottom:1em;
+}
+.fls_caption .title_location_property-type_info_price{
+    margin-bottom:0;
+}
+.fls_caption .location_price.content{
+    padding-bottom:0;
+}
+.fls_caption .location_object-type_price .price{
+    text-align: left;
+    margin-bottom:0;
+}
+
 .Box .fls_caption h3.highlight.location_price,
 .Row .fls_caption h3.highlight.title_price,
 .Row .fls_caption h3.highlight.location_price
 {
     padding:12px;
 }
+
+
 /* Slider Loading Screen */
 .loader_image{
     position:absolute;
