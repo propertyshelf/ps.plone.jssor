@@ -1,3 +1,8 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fls-slides .collection-item .Column {
+    clip: rect(0px, auto, auto, 0px) !important;
+  }
+}
 /* Mixin */
 .vertical_align{
   position: relative;
