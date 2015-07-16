@@ -165,8 +165,8 @@
                     tal:condition="python: layout=='title_price'">
                     <div class="title">
                       <div tal:content="listing/title/value"></div>
-                      <h3 class="title_price highlight price" tal:content="price" />
                     </div>
+                    <h3 class="title_price highlight price" tal:content="price" />
                   </div>
                   
 

@@ -910,8 +910,19 @@
 }
 
 /* Data Layout */
+.fls_caption .property-type_bed_bath_price h3.second_line{
+    position:absolute;
+    right:1em;
+    bottom:2px;
+}
 .fls_caption div.location_price .location{
     margin-bottom:0;
+}
+.fls_caption div.content.title_price div.title{
+    margin-bottom: 1em;
+}
+.fls_caption .property-type_bed_bath_price .property_type{
+    margin-right:1em;
 }
 .Column .fls_caption h3.highlight.location_price{
     position:absolute;
@@ -919,32 +930,6 @@
     left:0;
     right:0;
 }
-.Row .fls_caption h3.highlight.location_price
-{
-    position:absolute;
-    bottom:0;
-    right:0;
-}
-.Row .fls_caption h3.highlight.title_price{
-    position:absolute;
-    top:1em;
-    right:0;
-}
-.fls_caption div.content.title_price div.title{
-    margin:0;
-
-}
-
-.fls_caption .property-type_bed_bath_price .property_type{
-    margin-right:1em;
-}
-
-.fls_caption .property-type_bed_bath_price h3.second_line{
-    position:absolute;
-    right:1em;
-    bottom:2px;
-}
-
 .fls_caption .price_bed_bath .price{
     margin-right:1em;
     position:absolute;
@@ -999,15 +984,6 @@
     text-align: left;
     margin-bottom:0;
 }
-
-.Box .fls_caption h3.highlight.location_price,
-.Row .fls_caption h3.highlight.title_price,
-.Row .fls_caption h3.highlight.location_price
-{
-    padding:12px;
-}
-
-
 /* Slider Loading Screen */
 .loader_image{
     position:absolute;
