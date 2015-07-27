@@ -7,6 +7,7 @@ Changelog
 - add new data layouts for Listing Captions (Price + Bed + Bath , Property type + Bed + Bath + Price)
 - update default css, remove all dark and strong colors
 - set new standard setting for new Sliders
+- add IE 10+ support for SliderCaptions
 
 0.2.1 (2015-06-23)
 ------------------
