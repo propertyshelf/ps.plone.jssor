@@ -4,8 +4,7 @@ Changelog
 0.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- order FeaturedListing as defined in its configuration
 
 0.3 (2015-07-27)
 ----------------
