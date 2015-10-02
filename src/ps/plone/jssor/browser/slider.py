@@ -169,51 +169,51 @@ ARROW_STYLE['arrow21'] = ('<span u="arrowleft" class="jssora21l" style="width:'
                           '></span>')
 
 BULLET_STYLE = {}
-BULLET_STYLE['bullet01'] = '<div u="navigator" class="jssorb01" style="position:absolute; bottom:16px; right:10px;"><div u="prototype" style="position:absolute; width:12px; height:12px;"></div></div>'
-BULLET_STYLE['bullet02'] = '<div u="navigator" class="jssorb02" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:21px; height:21px; text-align:center; line-height:21px; color:White; font-size:12px;"><div u="numbertemplate" ></div></div></div>'
-BULLET_STYLE['bullet03'] = '<div u="navigator" class="jssorb03" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:21px; height:21px; text-align:center; line-height:21px; color:white; font-size:12px;"><div u="numbertemplate" ></div></div></div>'
-BULLET_STYLE['bullet05'] = '<div u="navigator" class="jssorb05" style="position:absolute; bottom:16px; right:6px;"><div u="prototype"  style="position:absolute; width:16px; height:16px;"></div></div>'
-BULLET_STYLE['bullet06'] = '<div u="navigator" class="jssorb06" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:18px; height:18px;"></div></div>'
-BULLET_STYLE['bullet07'] = '<div u="navigator" class="jssorb07" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:20px; height:20px;"></div></div>'
-BULLET_STYLE['bullet09'] = '<div u="navigator" class="jssorb09" style="position:absolute; bottom:16px; right:10px;"><div u="prototype" style="position:absolute; width:12px; height:12px;"></div></div>'
-BULLET_STYLE['bullet10'] = '<div u="navigator" class="jssorb10" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:11px; height:11px;" ></div></div>'
-BULLET_STYLE['bullet11'] = '<div u="navigator" class="jssorb11" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:11px; height:11px;" ></div></div>'
-BULLET_STYLE['bullet12'] = '<div u="navigator" class="jssorb12" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:16px; height:16px;"></div></div>'
-BULLET_STYLE['bullet13'] = '<div u="navigator" class="jssorb13" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:21px; height:21px;" ></div></div>'
-BULLET_STYLE['bullet14'] = '<div u="navigator" class="jssorb14" style="position:absolute; bottom:16px; right:6px;"><div u="prototype" style="position:absolute; width:12px; height:12px;" ></div></div>'
-BULLET_STYLE['bullet16'] = '<div u="navigator" class="jssorb16" style="position:absolute;bottom:16px;right:6px;"><div u="prototype" style="position:absolute; width:21px; height:21px;" ></div></div>'
-BULLET_STYLE['bullet17'] = '<div u="navigator" class="jssorb17" style="position:absolute;bottom:16px;right:6px;"><div u="prototype" style="position:absolute; width:16px; height:16px;" ></div></div>'
-BULLET_STYLE['bullet18'] = '<div u="navigator" class="jssorb18" style="position:absolute;bottom:16px;right:6px;"><div u="prototype" style="position:absolute; width:24px; height:24px;text-align:center;line-height:24px;font-size:16px;"><div u="numbertemplate" class="n" ></div></div></div>'
-BULLET_STYLE['bullet20'] = '<div u="navigator" class="jssorb20" style="position:absolute;bottom:16px;left:6px;"><div u="prototype" style="position:absolute; width:19px; height:19px;text-align:center;line-height:19px;color:White;font-size:12px;"><div u="numbertemplate"></div></div></div>'
-BULLET_STYLE['bullet21'] = '<div u="navigator" class="jssorb21" style="position:absolute;bottom:16px;left:6px;"><div u="prototype" style="position:absolute; width:19px; height:19px;text-align:center;line-height:19px;color:White;font-size:12px;" ></div></div>'
+BULLET_STYLE['bullet01'] = '<div u="navigator" class="jssorb01" style="position:absolute; bottom:16px; right:10px;"><div u="prototype" style="position:absolute; width:12px; height:12px;"></div></div>'  # noqa
+BULLET_STYLE['bullet02'] = '<div u="navigator" class="jssorb02" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:21px; height:21px; text-align:center; line-height:21px; color:White; font-size:12px;"><div u="numbertemplate" ></div></div></div>'  # noqa
+BULLET_STYLE['bullet03'] = '<div u="navigator" class="jssorb03" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:21px; height:21px; text-align:center; line-height:21px; color:white; font-size:12px;"><div u="numbertemplate" ></div></div></div>'  # noqa
+BULLET_STYLE['bullet05'] = '<div u="navigator" class="jssorb05" style="position:absolute; bottom:16px; right:6px;"><div u="prototype"  style="position:absolute; width:16px; height:16px;"></div></div>'  # noqa
+BULLET_STYLE['bullet06'] = '<div u="navigator" class="jssorb06" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:18px; height:18px;"></div></div>'  # noqa
+BULLET_STYLE['bullet07'] = '<div u="navigator" class="jssorb07" style="position:absolute; bottom:16px; left:6px;" ><div u="prototype"  style="position:absolute; width:20px; height:20px;"></div></div>'  # noqa
+BULLET_STYLE['bullet09'] = '<div u="navigator" class="jssorb09" style="position:absolute; bottom:16px; right:10px;"><div u="prototype" style="position:absolute; width:12px; height:12px;"></div></div>'  # noqa
+BULLET_STYLE['bullet10'] = '<div u="navigator" class="jssorb10" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:11px; height:11px;" ></div></div>'  # noqa
+BULLET_STYLE['bullet11'] = '<div u="navigator" class="jssorb11" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:11px; height:11px;" ></div></div>'  # noqa
+BULLET_STYLE['bullet12'] = '<div u="navigator" class="jssorb12" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:16px; height:16px;"></div></div>'  # noqa
+BULLET_STYLE['bullet13'] = '<div u="navigator" class="jssorb13" style="position:absolute; bottom:16px; right:6px;" ><div u="prototype" style="position:absolute; width:21px; height:21px;" ></div></div>'  # noqa
+BULLET_STYLE['bullet14'] = '<div u="navigator" class="jssorb14" style="position:absolute; bottom:16px; right:6px;"><div u="prototype" style="position:absolute; width:12px; height:12px;" ></div></div>'  # noqa
+BULLET_STYLE['bullet16'] = '<div u="navigator" class="jssorb16" style="position:absolute;bottom:16px;right:6px;"><div u="prototype" style="position:absolute; width:21px; height:21px;" ></div></div>'  # noqa
+BULLET_STYLE['bullet17'] = '<div u="navigator" class="jssorb17" style="position:absolute;bottom:16px;right:6px;"><div u="prototype" style="position:absolute; width:16px; height:16px;" ></div></div>'  # noqa
+BULLET_STYLE['bullet18'] = '<div u="navigator" class="jssorb18" style="position:absolute;bottom:16px;right:6px;"><div u="prototype" style="position:absolute; width:24px; height:24px;text-align:center;line-height:24px;font-size:16px;"><div u="numbertemplate" class="n" ></div></div></div>'  # noqa
+BULLET_STYLE['bullet20'] = '<div u="navigator" class="jssorb20" style="position:absolute;bottom:16px;left:6px;"><div u="prototype" style="position:absolute; width:19px; height:19px;text-align:center;line-height:19px;color:White;font-size:12px;"><div u="numbertemplate"></div></div></div>'  # noqa
+BULLET_STYLE['bullet21'] = '<div u="navigator" class="jssorb21" style="position:absolute;bottom:16px;left:6px;"><div u="prototype" style="position:absolute; width:19px; height:19px;text-align:center;line-height:19px;color:White;font-size:12px;" ></div></div>'  # noqa
 
 THUMBNAIL_STYLE = {}
-THUMBNAIL_STYLE['thumb01'] = '<div u="thumbnavigator" class="jssort01" style="position:absolute;width:800px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="position:absolute;width:72px;height:72px;top:0;left:0; bottom:14px;"><div class="w"><div u="thumbnailtemplate" style=" width:100%;height:100%;border:none;position:absolute;bottom:0;left:0;"></div></div><div class="c"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb02'] = '<div u="thumbnavigator" class="jssort02" style="position:absolute;width:240px;height:480px; min-height:100%;max-height:100%;left:0px;bottom:0px;"><div u="slides" style="cursor:move; overflow:visible;"><div u="prototype" class="p" style="position:absolute;width:99px;height:66px;top:0;left:0;"><div class="w"><div u="thumbnailtemplate" style=" width:100%;height:100%;border:none;position:absolute;top:0;left:0;"></div></div><div class="c"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb03'] = '<div u="thumbnavigator" class="jssort03" style="position:absolute;width:600px;height:60px;left:0px;bottom:0px;"><div style=" background-color:#000;filter:alpha(opacity=30);opacity:.3;width:100%;height:100%;"></div><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:62px;HEIGHT:32px;TOP:0;LEFT:0;"><div class="w"><div u="thumbnailtemplate" style=" WIDTH:100%;HEIGHT:100%;border:none;position:absolute;TOP:0;LEFT:0;"></div></div><div class="c" style="POSITION:absolute;BACKGROUND-COLOR:#000;TOP:0;LEFT:0"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb04'] = '<div u="thumbnavigator" class="jssort04" style="position:absolute;width:600px;height:60px;right:0px;bottom:0px;"><div u="slides" style="bottom:25px;right:30px;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:62px;HEIGHT:32px;TOP:0;LEFT:0;"><div class="w"><div u="thumbnailtemplate" style=" WIDTH:100%;HEIGHT:100%;border:none;position:absolute;TOP:0;LEFT:0;"></div></div><div class="c" style="POSITION:absolute;BACKGROUND-COLOR:#000;TOP:0;LEFT:0"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb05'] = '<div u="thumbnavigator" class="jssort05" style="position:absolute;width:800px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:72px;HEIGHT:72px;TOP:0;LEFT:0;"><div class="o" style="position:absolute;top:1px;left:1px;width:72px;height:72px;overflow:hidden;"><div u="thumbnailtemplate" class="b" style="width:72px;height:72px;border:none;position:absolute;TOP:0;LEFT:0;"></div><div class="i"></div><div u="thumbnailtemplate" class="f" style="width:72px;height:72px;border:none;position:absolute;TOP:0;LEFT:0;"></div></div></div></div></div>'
-THUMBNAIL_STYLE['thumb06'] = '<div u="thumbnavigator" class="jssort06" style="position:absolute;width:240px;height:480px;right:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="position:absolute;width:99px;height:66px;top:0;left:0;"><div class="o" style="position:absolute;top:0px;left:0px;width:99px;height:66px;overflow:hidden;"><div u="thumbnailtemplate" class="b" style="width:99px;height:66px;border:none;position:absolute;top:0;left:0;"></div><div class="i"></div><div u="thumbnailtemplate" class="f" style="width:99px;height:66px;border:none;position:absolute;top:0;left:0;"></div></div></div></div></div>'
-THUMBNAIL_STYLE['thumb07'] = '<div u="thumbnavigator" class="jssort07" style="position:absolute;width:800px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:72px;HEIGHT:72px;TOP:0;LEFT:0;"><div u="thumbnailtemplate" class="i" style="position:absolute;"></div><div class="o"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb08'] = '<div u="thumbnavigator" class="jssort08" style="position:absolute;width:600px;height:100px;left:180px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="position:absolute;width:50px;height:50px;top:0;left:0;"><div u="thumbnailtemplate" class="i" style="position:absolute;"></div><div class="o"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb09'] = '<div u="thumbnavigator" class="sliderb-T" style="position:absolute;bottom:0px;left:0px;height:45px;width:600px;"><div style="filter:alpha(opacity=40);opacity:0.4;position:absolute;display:block;background-color:#000000;top:0px;left:0px;width:100%;height:100%;"></div><div u="slides"><div u="prototype" style="position:absolute;width:600px;height:45px;top:0;left:0;"><div u="thumbnailtemplate" style="position:absolute;width:100%;height:100%;top:0;left:0;font-family:verdana;font-weight:normal;color:#fff;line-height:45px;font-size:20px;padding-left:10px;"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb10'] = '<div u="thumbnavigator" class="slider1-T" style="position:absolute;bottom:0px;left:0px;height:30px;width:600px;"><div style="filter:alpha(opacity=50);opacity:0.5;position:absolute;display:block;background-color:#000;top:0px;left:0px;width:100%;height:100%;"></div><div u="slides" style="cursor:move;"><div u="prototype" style="position:absolute;width:600px;height:30px;top:0;left:0;"><div u="thumbnailtemplate" style="position:absolute;width:100%;height:100%;top:0;left:0;font-family:verdana;font-weight:normal;color:#fff;line-height:30px;font-size:16px;padding-left:10px;"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb11'] = '<div u="thumbnavigator" class="jssort11" style="cursor:default;position:absolute;width:600px;height:60px;left:0px;bottom:0px;"><div style=" background-color:#000;filter:alpha(opacity=30);opacity:.3;width:100%;height:100%;"></div><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:60px;HEIGHT:30px;TOP:0;LEFT:0;"><div u="thumbnailtemplate" class="t" style=" WIDTH:60px;HEIGHT:30px;border:none;position:absolute;TOP:0;LEFT:0;"></div></div></div></div>'
-THUMBNAIL_STYLE['thumb12'] = '<div u="thumbnavigator" class="jssort12" style="cursor:default;position:absolute;width:600px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:200px;HEIGHT:100px;TOP:0;LEFT:0;"><div u="thumbnailtemplate" style="WIDTH:200px;HEIGHT:100px;border:none;position:absolute;TOP:0;LEFT:0;"></div></div></div></div>'
+THUMBNAIL_STYLE['thumb01'] = '<div u="thumbnavigator" class="jssort01" style="position:absolute;width:800px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="position:absolute;width:72px;height:72px;top:0;left:0; bottom:14px;"><div class="w"><div u="thumbnailtemplate" style=" width:100%;height:100%;border:none;position:absolute;bottom:0;left:0;"></div></div><div class="c"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb02'] = '<div u="thumbnavigator" class="jssort02" style="position:absolute;width:240px;height:480px; min-height:100%;max-height:100%;left:0px;bottom:0px;"><div u="slides" style="cursor:move; overflow:visible;"><div u="prototype" class="p" style="position:absolute;width:99px;height:66px;top:0;left:0;"><div class="w"><div u="thumbnailtemplate" style=" width:100%;height:100%;border:none;position:absolute;top:0;left:0;"></div></div><div class="c"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb03'] = '<div u="thumbnavigator" class="jssort03" style="position:absolute;width:600px;height:60px;left:0px;bottom:0px;"><div style=" background-color:#000;filter:alpha(opacity=30);opacity:.3;width:100%;height:100%;"></div><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:62px;HEIGHT:32px;TOP:0;LEFT:0;"><div class="w"><div u="thumbnailtemplate" style=" WIDTH:100%;HEIGHT:100%;border:none;position:absolute;TOP:0;LEFT:0;"></div></div><div class="c" style="POSITION:absolute;BACKGROUND-COLOR:#000;TOP:0;LEFT:0"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb04'] = '<div u="thumbnavigator" class="jssort04" style="position:absolute;width:600px;height:60px;right:0px;bottom:0px;"><div u="slides" style="bottom:25px;right:30px;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:62px;HEIGHT:32px;TOP:0;LEFT:0;"><div class="w"><div u="thumbnailtemplate" style=" WIDTH:100%;HEIGHT:100%;border:none;position:absolute;TOP:0;LEFT:0;"></div></div><div class="c" style="POSITION:absolute;BACKGROUND-COLOR:#000;TOP:0;LEFT:0"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb05'] = '<div u="thumbnavigator" class="jssort05" style="position:absolute;width:800px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:72px;HEIGHT:72px;TOP:0;LEFT:0;"><div class="o" style="position:absolute;top:1px;left:1px;width:72px;height:72px;overflow:hidden;"><div u="thumbnailtemplate" class="b" style="width:72px;height:72px;border:none;position:absolute;TOP:0;LEFT:0;"></div><div class="i"></div><div u="thumbnailtemplate" class="f" style="width:72px;height:72px;border:none;position:absolute;TOP:0;LEFT:0;"></div></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb06'] = '<div u="thumbnavigator" class="jssort06" style="position:absolute;width:240px;height:480px;right:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="position:absolute;width:99px;height:66px;top:0;left:0;"><div class="o" style="position:absolute;top:0px;left:0px;width:99px;height:66px;overflow:hidden;"><div u="thumbnailtemplate" class="b" style="width:99px;height:66px;border:none;position:absolute;top:0;left:0;"></div><div class="i"></div><div u="thumbnailtemplate" class="f" style="width:99px;height:66px;border:none;position:absolute;top:0;left:0;"></div></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb07'] = '<div u="thumbnavigator" class="jssort07" style="position:absolute;width:800px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:72px;HEIGHT:72px;TOP:0;LEFT:0;"><div u="thumbnailtemplate" class="i" style="position:absolute;"></div><div class="o"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb08'] = '<div u="thumbnavigator" class="jssort08" style="position:absolute;width:600px;height:100px;left:180px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="position:absolute;width:50px;height:50px;top:0;left:0;"><div u="thumbnailtemplate" class="i" style="position:absolute;"></div><div class="o"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb09'] = '<div u="thumbnavigator" class="sliderb-T" style="position:absolute;bottom:0px;left:0px;height:45px;width:600px;"><div style="filter:alpha(opacity=40);opacity:0.4;position:absolute;display:block;background-color:#000000;top:0px;left:0px;width:100%;height:100%;"></div><div u="slides"><div u="prototype" style="position:absolute;width:600px;height:45px;top:0;left:0;"><div u="thumbnailtemplate" style="position:absolute;width:100%;height:100%;top:0;left:0;font-family:verdana;font-weight:normal;color:#fff;line-height:45px;font-size:20px;padding-left:10px;"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb10'] = '<div u="thumbnavigator" class="slider1-T" style="position:absolute;bottom:0px;left:0px;height:30px;width:600px;"><div style="filter:alpha(opacity=50);opacity:0.5;position:absolute;display:block;background-color:#000;top:0px;left:0px;width:100%;height:100%;"></div><div u="slides" style="cursor:move;"><div u="prototype" style="position:absolute;width:600px;height:30px;top:0;left:0;"><div u="thumbnailtemplate" style="position:absolute;width:100%;height:100%;top:0;left:0;font-family:verdana;font-weight:normal;color:#fff;line-height:30px;font-size:16px;padding-left:10px;"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb11'] = '<div u="thumbnavigator" class="jssort11" style="cursor:default;position:absolute;width:600px;height:60px;left:0px;bottom:0px;"><div style=" background-color:#000;filter:alpha(opacity=30);opacity:.3;width:100%;height:100%;"></div><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:60px;HEIGHT:30px;TOP:0;LEFT:0;"><div u="thumbnailtemplate" class="t" style=" WIDTH:60px;HEIGHT:30px;border:none;position:absolute;TOP:0;LEFT:0;"></div></div></div></div>'  # noqa
+THUMBNAIL_STYLE['thumb12'] = '<div u="thumbnavigator" class="jssort12" style="cursor:default;position:absolute;width:600px;height:100px;left:0px;bottom:0px;"><div u="slides" style="cursor:move;"><div u="prototype" class="p" style="POSITION:absolute;WIDTH:200px;HEIGHT:100px;TOP:0;LEFT:0;"><div u="thumbnailtemplate" style="WIDTH:200px;HEIGHT:100px;border:none;position:absolute;TOP:0;LEFT:0;"></div></div></div></div>'  # noqa
 
 SlidesCSS = {}
-SlidesCSS['thumb01'] = 'cursor:move;position:absolute;left:0px;top:0px;overflow:hidden;'
-SlidesCSS['thumb02'] = 'cursor:move;position:absolute;left:240px;top:0px;overflow:hidden;width:720px;height:100%;'
-SlidesCSS['thumb03'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'
-SlidesCSS['thumb04'] = 'cursor:move;position:absolute;left:0px;top:0px;width:960px;height:400px;overflow:hidden;'
-SlidesCSS['thumb05'] = 'cursor:move;position:absolute;left:0px;top:0px;width:800px;height:356px;overflow:hidden;'
-SlidesCSS['thumb06'] = 'cursor:move;position:absolute;left:0px;top:0px;width:720px;height:480px;overflow:hidden;'
-SlidesCSS['thumb07'] = 'cursor:move;position:absolute;left:0px;top:0px;width:800px;height:356px;overflow:hidden;'
-SlidesCSS['thumb08'] = 'cursor:move;position:absolute;left:180px;top:50px;width:600px;height:300px;overflow:hidden;'
-SlidesCSS['thumb09'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'
-SlidesCSS['thumb10'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'
-SlidesCSS['thumb11'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'
-SlidesCSS['thumb12'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'
+SlidesCSS['thumb01'] = 'cursor:move;position:absolute;left:0px;top:0px;overflow:hidden;'  # noqa
+SlidesCSS['thumb02'] = 'cursor:move;position:absolute;left:240px;top:0px;overflow:hidden;width:720px;height:100%;'  # noqa
+SlidesCSS['thumb03'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'  # noqa
+SlidesCSS['thumb04'] = 'cursor:move;position:absolute;left:0px;top:0px;width:960px;height:400px;overflow:hidden;'  # noqa
+SlidesCSS['thumb05'] = 'cursor:move;position:absolute;left:0px;top:0px;width:800px;height:356px;overflow:hidden;'  # noqa
+SlidesCSS['thumb06'] = 'cursor:move;position:absolute;left:0px;top:0px;width:720px;height:480px;overflow:hidden;'  # noqa
+SlidesCSS['thumb07'] = 'cursor:move;position:absolute;left:0px;top:0px;width:800px;height:356px;overflow:hidden;'  # noqa
+SlidesCSS['thumb08'] = 'cursor:move;position:absolute;left:180px;top:50px;width:600px;height:300px;overflow:hidden;'  # noqa
+SlidesCSS['thumb09'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'  # noqa
+SlidesCSS['thumb10'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'  # noqa
+SlidesCSS['thumb11'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'  # noqa
+SlidesCSS['thumb12'] = 'cursor:move;position:absolute;left:0px;top:0px;width:600px;height:300px;overflow:hidden;'  # noqa
 
 
 class IPossibleSliderViewlet(Interface):
@@ -634,7 +634,8 @@ class SliderViewlet(ViewletBase):
 
     @property
     def CaptionDataLayout(self):
-        return self.Settings.get('CS_DataType', 'location_property-type_info_price')
+        default = 'location_property-type_info_price'
+        return self.Settings.get('CS_DataType', default)
 
     @property
     def isLongCaption(self):
@@ -1496,7 +1497,10 @@ class ICaptionSlider(Interface):
 
     CS_PlayOutMode = schema.Choice(
         default=u"1",
-        description=_(u'(0): None (no play), (1): Chain (goes before main slide)[default], (3): Chain Flatten (goes before main slide and flatten all caption animations)'),
+        description=_(
+            u'(0): None (no play), (1): Chain (goes before main slide)'
+            '[default], (3): Chain Flatten (goes before main slide and flatten'
+            ' all caption animations)'),
         required=False,
         title=_(
             u"label_CS_PlayOutMode",
@@ -1525,7 +1529,11 @@ class IExtendedNavigation(Interface):
             u"label_FLS_DragOrientation",
             default=u"Slider Drag Orientation",
         ),
-        description=_(u'Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)'),
+        description=_(
+            u'Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, '
+            '3 either (Note that the $DragOrientation should be the same as '
+            '$PlayOrientation when $DisplayPieces is greater than 1, or '
+            'parking position is not 0)'),
         values=["0", "1", "2", "3"]
     )
 
@@ -1545,7 +1553,11 @@ class IExpertConfig(Interface):
 
     FLS_UISearchMode = schema.Choice(
         default=u"1",
-        description=_(u'The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).'),
+        description=_(
+            u'The way (0 parellel, 1 recursive, default value is 1) '
+            'to search UI components (slides container, loading '
+            'screen, navigator container, arrow navigator container,'
+            ' thumbnail navigator container etc).'),
         required=False,
         title=_(
             u"label_FLS_UISearchMode",
@@ -1560,7 +1572,9 @@ class IExpertConfig(Interface):
         title=_(
             u'label_AN_Class',
             default=u'Arrow Class'),
-        description=_(u'Class to create arrow navigator instance. Default: $JssorArrowNavigator$')
+        description=_(
+            u'Class to create arrow navigator instance. '
+            'Default: $JssorArrowNavigator$')
     )
 
     SS_Class = schema.TextLine(
@@ -1569,7 +1583,9 @@ class IExpertConfig(Interface):
         title=_(
             u'label_SS_Class',
             default=u'SlideShow Class'),
-        description=_(u'Class to create instance of slideshow.[default= $JssorSlideshowRunner$]')
+        description=_(
+            u'Class to create instance of slideshow.[default= '
+            '$JssorSlideshowRunner$]')
     )
 
     CS_Class = schema.TextLine(
@@ -1578,7 +1594,9 @@ class IExpertConfig(Interface):
         title=_(
             u'label_CS_Class',
             default=u'CaptionSlider Class'),
-        description=_(u'Class to create instance to animate caption.[default= $JssorCaptionSlider$]')
+        description=_(
+            u'Class to create instance to animate caption.[default= '
+            '$JssorCaptionSlider$]')
     )
 
     TN_Class = schema.TextLine(
@@ -1587,7 +1605,9 @@ class IExpertConfig(Interface):
         title=_(
             u'label_TN_Class',
             default=u'Thumbnail Navigator Class'),
-        description=_(u'Class to create thumbnail navigator instance.[default= $JssorThumbnailNavigator$]')
+        description=_(
+            u'Class to create thumbnail navigator instance.[default= '
+            '$JssorThumbnailNavigator$]')
     )
 
 
@@ -1601,7 +1621,10 @@ class ICustomCode(Interface):
             u'label_use_custom_js',
             default=u'Use my custom Slider Javascript',
         ),
-        description=u'For the ultimate tweak you can use a fully customized JavaScript if you wish. The generated Code is available for Copy&Paste ease the start.'
+        description=_(
+            u'For the ultimate tweak you can use a fully customized JavaScript'
+            ' if you wish. The generated Code is available for Copy&Paste ease'
+            ' the start.')
     )
 
     featuredListingSliderJS = schema.Text(
@@ -1710,7 +1733,17 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
     """HeaderPlugin Configuration Form."""
 
     fields = field.Fields(ISliderViewletConfiguration)
-    groups = (ItemProviderGroup, PlayerOptionsGroup, SlideConfigGroup, BulletNavigatorGroup, ArrowNavigatorGroup, ThumbnailNavigatorGroup, CaptionSliderGroup, ExtendedNavigationGroup, ExpertGroup, CustomCodeGroup)
+    groups = (
+        ItemProviderGroup,
+        PlayerOptionsGroup,
+        SlideConfigGroup,
+        BulletNavigatorGroup,
+        ArrowNavigatorGroup,
+        ThumbnailNavigatorGroup,
+        CaptionSliderGroup,
+        ExtendedNavigationGroup,
+        ExpertGroup,
+        CustomCodeGroup,)
 
     ignoreContext = False
 
@@ -1839,10 +1872,11 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
         """get string of arrow navigation options"""
 
         an_o = ''
+        name = '$JssorArrowNavigator$'
         an = data.get('FLS_ArrowNavigator', True)
         if an is True:
             # Build Arrow Navi Config together
-            an_o += "$Class: %s, " % (data.get('AN_Class', '$JssorArrowNavigator$'))
+            an_o += "$Class: %s, " % (data.get('AN_Class', name))
             an_o += "$ChanceToShow: %s, " % (data.get('AN_ChanceToShow', 2))
             an_o += "$AutoCenter: %s, " % (data.get('AN_AutoCenter', 2))
             an_o += "$Steps: %s, " % (data.get('AN_Steps', 1))
@@ -1861,10 +1895,11 @@ class SliderViewletConfiguration(group.GroupForm, form.Form):
         """get string of thumbnail navigation options"""
 
         tn_o = ''
+        name = '$JssorThumbnailNavigator$'
         tn = data.get('FLS_ThumbnailNavigator', True)
         if tn is True:
             # Build Thumbnail Config
-            tn_o += "$Class: %s, " % (data.get('TN_Class', '$JssorThumbnailNavigator$'))
+            tn_o += "$Class: %s, " % (data.get('TN_Class', name))
             tn_o += "$Loop: %s, " % (data.get('TNO_Loop', 1))
             tn_o += "$ActionMode: %s, " % (data.get('TNO_ActionMode', 1))
             tn_o += "$AutoCenter: %s, " % (data.get('TNO_AutoCenter', 2))
