@@ -19,7 +19,7 @@ long_description = (
 
 setup(
     name='ps.plone.jssor',
-    version='0.4.dev1',
+    version='0.4',
     description="Configurable Jssor Slider to show propertyshelf MLS Listings",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
