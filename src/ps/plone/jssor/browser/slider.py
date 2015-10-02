@@ -439,6 +439,9 @@ class SliderViewlet(ViewletBase):
             results = self._mls_results(provider)
 
             if results is not None:
+                # if provider = FeaturedLstings, order results
+                if has_PSExtensions and featured.IFeaturedListings.providedBy(provider):
+                    results = self.order_results(results)
                 return results
             else:
                 msg = _(u"No MLS results found. Please check the config")
@@ -459,6 +462,20 @@ class SliderViewlet(ViewletBase):
             """Don't have .queryCatalog()"""
             print e
         return None
+
+    def order_results(self, results):
+        """order as in FeaturedListing config"""
+        provider = self.ItemProvider
+        config = copy.copy(self.get_config(provider))
+        # sorting list
+        sl = config.get('listing_ids', None)
+
+        if sl is not None:
+            # order results
+            o_r = [l for x in sl for l in results if l['id']['value'] == x]
+            return o_r
+        else:
+            return results
 
     def _mls_results(self, obj):
         items = []
